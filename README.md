@@ -1,148 +1,214 @@
+<div align="right">
+  <a href="./README.en.md">English</a> | <strong>繁體中文</strong>
+</div>
+
+<div align="center">
+
 # awesome-agentic-ai-zh
 
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Status](https://img.shields.io/badge/status-WIP%20%C2%B7%20Phase%201-orange)](#phase-1-現況)
-[![Language](https://img.shields.io/badge/語言-繁體中文-red)](README.md) [![EN](https://img.shields.io/badge/lang-English-blue)](README.en.md)
+### 🤖 AI Agent 學習地圖 — 從第一行 LLM API 到自己打造多 agent 系統
 
-> **AI agent 學習路線圖（繁體中文）** — 從第一次呼叫 LLM API 到 ship 多 agent 生產系統的完整路徑。**結構化 7 階段**，不是平鋪 awesome list；每個階段都有 hello-X 必跑 demo、必修閱讀、精選 project。
+<p><em>結構化 7 階段學習路徑，不是平鋪 awesome list；每階段都有必跑 demo、必修閱讀、精選 project</em></p>
 
-[English version](README.en.md)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=flat)](LICENSE)
+[![Status](https://img.shields.io/badge/status-WIP%20%C2%B7%20Phase%201-orange?style=flat)](#phase-1-現況)
+![GitHub stars](https://img.shields.io/github/stars/WenyuChiou/awesome-agentic-ai-zh?style=flat&logo=github)
+![GitHub forks](https://img.shields.io/github/forks/WenyuChiou/awesome-agentic-ai-zh?style=flat&logo=github)
+[![Lang](https://img.shields.io/badge/語言-繁體中文-red?style=flat)](README.md)
 
----
-
-## 為什麼有這個 repo
-
-大多數 AI agent 的 awesome 清單都是**平鋪型 catalog** — 你已經知道在找什麼時很有用，但**剛入門想知道下一步學什麼**時就無從下手。
-
-這個 repo 是**結構化學習路線圖**：
-
-- 7 個階段、從 prerequisite 到 production
-- 每階段有「**必跑 hello-X demos**」（光讀沒用、必須動手）
-- Curated projects 按階段 + audience 分類
-- **繁體中文 canonical**，引用的中文資源以 zh-CN（Datawhale、jjyaoao、KimYx0207）為主，會逐步補 zh-TW 原生資源
-- 誠實時間估算（主幹**最少 14-19 週、現實上 5-6 個月**）
-
-如果你是剛起步、想避免迷失在 noise 裡的學習者 — 這份路線圖就是給你的。
+</div>
 
 ---
 
-## 7 階段學習地圖
+## 🎯 專案介紹
 
+這個專案是為**想學習 AI 或 AI agent 的人**設計的。
+
+依照一份**從零開始、循序漸進**的 AI agent 學習地圖，把網路上散落各處的高品質專案、教材、Hello-X demo、必修閱讀蒐集起來，整理成 **7 個階段** 的結構化學習路線——每階段都會清楚指出**該學什麼、必跑哪些 demo、推薦哪幾個 project、進入下一階段前該檢查什麼**。
+
+走完整條路線，你會從「**LLM 使用者**」進階成「**agent 系統建構者**」——能讀懂 framework 在做什麼、能設計多 agent 協作、能寫自己的 MCP server。
+
+---
+
+## 📋 目錄
+
+- [🎯 專案介紹](#-專案介紹)
+- [📚 快速開始](#-快速開始)
+  - [線上閱讀](#線上閱讀)
+  - [本地下載](#本地下載)
+  - [✨ 你會收穫什麼？](#-你會收穫什麼)
+- [🗺️ 7 階段學習地圖](#️-7-階段學習地圖)
+- [💡 如何學習](#-如何學習)
+- [📚 相關資源](#-相關資源)
+- [🚧 Phase 1 現況](#-phase-1-現況)
+- [🤝 如何貢獻](#-如何貢獻)
+- [🙏 致謝](#-致謝)
+- [🎓 引用](#-引用)
+- [License](#license)
+
+---
+
+## 📚 快速開始
+
+### 線上閱讀
+- **[GitHub README（你正在看）](README.md)** — 主入口、整體導航
+- **[7-stage 學習地圖](#7-階段學習地圖)** — 從哪開始學
+
+### 本地下載
+```bash
+git clone https://github.com/WenyuChiou/awesome-agentic-ai-zh.git
+cd awesome-agentic-ai-zh
+# 從 stages/00-foundations.md 開始
 ```
-Stage 0  基礎準備           (Python · CLI · git · API · JSON)         1-2 週
-Stage 1  LLM 入門           (token · API · 各家 LLM 比較)             1 週
-Stage 2  Prompt 設計        (系統 prompt · few-shot · CoT)             1-2 週
-Stage 3  Tool Use & Hello Agent ⭐ (function calling · ReAct · 5 hello-X) 2-3 週
-Stage 4  Agent 框架         (LangGraph · AutoGen · CrewAI 等)          2-3 週
-Stage 5  Claude Code 生態 ⭐⭐ (MCP · Skills · Plugins)                3-4 週
-Stage 6  Memory · RAG · 進階 (vector DB · long-term memory)             2 週
-Stage 7  Multi-Agent · Production (orchestration · eval · deploy · SDK) 2-4 週
-```
 
-**主幹總時數：最少 14-19 週、現實上 5-6 個月**，每週 5-8 hr 兼職進度。下限假設你跳過 Stage 0 且不會卡在框架安裝。
+### ✨ 你會收穫什麼？
 
-走完主幹後可以選 specialized branch：
-- 🔬 [研究人員 path](branches/for-researcher.md)
-- 💻 [開發者 path](branches/for-developer.md)
-- 🎓 [教師 path](branches/for-teacher.md) — *目前最薄、特別歡迎社群貢獻*
-- 📊 [知識工作者 path](branches/for-knowledge-worker.md)
+- 📖 **完全免費** — MIT 授權，所有內容開放共學
+- 🗺️ **結構化路徑** — 7 階段、明確「我目前在哪、下一步學什麼」
+- 🛠️ **必跑 Hello-X demos** — 每階段都有 1-5 個必跑 mini project，光看不練不算學會
+- 🎯 **精選 110+ 個 projects** — 每個都附星等推薦、適合誰、教什麼、怎麼跑
+- 🌏 **中文 / 英文雙語** — 繁中為主、英文版完整對照
+- 🎓 **不只「框架」、還有「Claude Code 生態」** — MCP / Skills / Plugins / SDK 完整堆疊
+- 🔬 **4 條進階分支** — 走完主幹後可選研究員 / 開發者 / 老師 / 知識工作者 path
+- ⏱️ **誠實時程** — 主幹最少 14-19 週、現實 5-6 個月（每週 5-8 hr）
 
 ---
 
-## 自我引用聲明
+## 🗺️ 7 階段學習地圖
 
-整個 catalog 約六分之一（~12 個 entry）是這個 repo 作者（`WenyuChiou/...`）自己維護的 repo。納入是因為它們示範**特定 pattern**（multi-plugin marketplace、single-plugin bundle、single-skill plugin、sub-CLI delegation、governance layer）— 每個 entry 的 notes 都會解釋它教什麼 pattern。如果有非自有的 repo 教同樣 pattern 教得更好、歡迎開 PR — 見 CONTRIBUTING.md。
-
----
-
-## 各階段速查
-
-| 階段 | 標題 | 核心問題 | 詳細頁面 |
+| Stage | 主題 | 關鍵內容 | 時程 |
 |---|---|---|---|
-| 0 | 基礎準備 | 我有基本能力嗎？ | [stages/00-foundations.md](stages/00-foundations.md) |
-| 1 | LLM 入門 | 什麼是 LLM？ | [stages/01-llm-basics.md](stages/01-llm-basics.md) |
-| 2 | Prompt 設計 | 怎麼讓 LLM 照我意思跑？ | [stages/02-prompt-engineering.md](stages/02-prompt-engineering.md) |
-| 3 | Tool Use & Hello Agent ⭐ | 怎麼建第一個 agent？ | [stages/03-tool-use-and-hello-agent.md](stages/03-tool-use-and-hello-agent.md) |
-| 4 | Agent 框架 | 該學哪個框架？ | [stages/04-agent-frameworks.md](stages/04-agent-frameworks.md) |
-| 5 | Claude Code 生態 ⭐⭐ | 怎麼擴充 Claude Code？ | [stages/05-claude-code-ecosystem.md](stages/05-claude-code-ecosystem.md) |
-| 6 | Memory · RAG | Agent 怎麼記憶？ | [stages/06-memory-rag.md](stages/06-memory-rag.md) |
-| 7 | Multi-Agent · Production | 怎麼 ship 到 production？ | [stages/07-multi-agent-production.md](stages/07-multi-agent-production.md) |
+| **0** | [基礎準備](stages/00-foundations.md) | Python · CLI · git · API · JSON | 1-2 週 |
+| **1** | [LLM 入門](stages/01-llm-basics.md) | token · API · 各家 LLM 比較 | 1 週 |
+| **2** | [Prompt 設計](stages/02-prompt-engineering.md) | 系統 prompt · few-shot · CoT | 1-2 週 |
+| **3** ⭐ | [Tool Use & Hello Agent](stages/03-tool-use-and-hello-agent.md) | function calling · ReAct · 5 個 Hello-X | 2-3 週 |
+| **4** | [Agent 框架](stages/04-agent-frameworks.md) | LangGraph · AutoGen · CrewAI · Smolagents | 2-3 週 |
+| **5** ⭐⭐ | [Claude Code 生態](stages/05-claude-code-ecosystem.md) | MCP · Skills · Plugins · Marketplace | 3-4 週 |
+| **6** | [Memory · RAG · 進階](stages/06-memory-rag.md) | vector DB · long-term memory · contextual retrieval | 2 週 |
+| **7** | [進階 Multi-Agent](stages/07-multi-agent-production.md) | multi-agent orchestration · eval · observability · SDK 進階 | 2-4 週 |
 
-> **目前各 stage 詳細頁面為英文版**（用作 reference），繁中翻譯為 Phase 2 工作。
+> **總時程**：主幹最少 **14-19 週**、現實 **5-6 個月**（每週 5-8 hr 兼職）
 
----
+走完主幹後從 4 條 specialized branch 選一條繼續：
 
-## 怎麼用這個 repo
-
-1. **看上面 7 個階段、找到你目前位置**
-2. **點進對應 stage 頁面**，每個頁面都有：
-   - Learning goals（讀完能做什麼）
-   - Entry conditions（前置條件）
-   - 必修閱讀（3-5 個連結）
-   - 必跑 Hello-X projects
-   - Curated case-study projects（含我的 notes）
-   - Self-check 進下一階段
-3. **不要跳過 Stage 3 Hello Agent** — 5 個 hello-X 沒實際跑過 = 浪費時間
-4. **Stage 5 通常會花最多時間**，正常的
+| Branch | 適合誰 | 主題 |
+|---|---|---|
+| 🔬 [研究人員](branches/for-researcher.md) | 研究生、博後、PI | 文獻整理 · paper 寫作 · multi-agent review |
+| 💻 [開發者](branches/for-developer.md) | 軟體工程師 | Cursor · Aider · CLI delegation · code review |
+| 🎓 [教師](branches/for-teacher.md) 🚧 | 老師、講師 | 備課 · 投影片 · 學生 feedback *（目前最薄、歡迎貢獻）* |
+| 📊 [知識工作者](branches/for-knowledge-worker.md) | 顧問、PM、分析師 | Email · 會議紀錄 · report 自動化 |
 
 ---
 
-## Curation 標準
+## 💡 如何學習
 
-每個列入的 project 都通過以下檢核：
+歡迎你 — 未來的 AI agent 系統建構者。在開始這條路之前，給你一些指引。
 
-- **持續維護**（最近 6 個月有 commit）
-- **文件品質**（README 清楚、hello-world 可重現）
-- **教育價值**（有沒有教到可推廣的概念？）
-- **License 明確**（避開沒 license 的 repo）
-- **可信度**（known maintainer 或 org）
+本路線圖兼顧概念與實作，要協助你**從一個 LLM 使用者，蛻變成一個 agent 系統建構者**。內容適合**有基本 Python 能力**的開發者、研究生、自學者。在開始之前，希望你具備：
 
-推薦星等（⭐ 到 ⭐⭐⭐⭐⭐）：
-- ⭐⭐⭐⭐⭐ — 該階段必讀
-- ⭐⭐⭐⭐ — 強推、值得深入
-- ⭐⭐⭐ — 紮實範例、值得跑跑看
-- ⭐⭐ — 參考用、有興趣再看
-- ⭐ — Niche / 進階 / 為了完整列表
+- **基本 Python** — 寫過 function、用過 API、看得懂 JSON
+- **基本 git** — clone、commit、push
+- **想學的動機** — agent 是 2025+ 最快變化的領域，需要持續投入
+
+如果上面有缺、Stage 0 補齊；如果上面都已會，**直接從 Stage 1 開始**。
+
+主幹結構分 4 部分：
+
+- **Part 1（Stage 0-2）：基礎與 LLM 入門** — Python / git / API、什麼是 LLM、怎麼設計 prompt
+- **Part 2（Stage 3-4）：建構你的 Agent** — 從 tool use 進化到 agent，學主流 framework
+- **Part 3（Stage 5）：Claude Code 生態系** — MCP / Skills / Plugins，這是整個路線的核心
+- **Part 4（Stage 6-7）：進階整合** — memory / RAG / multi-agent 協作
+
+走完主幹（14-19 週）後，從 4 個 specialized branch 選一個走。
+
+最重要的一條建議：**不要跳過 Hello-X demos**。每個 stage 的 hello-X 都是「不動手就學不會」的東西，光讀就跳過你會在後面卡住。
+
+準備好了嗎？[從 Stage 0 開始](stages/00-foundations.md)。
 
 ---
 
-## 相關 awesome 清單
+## 📚 相關資源
 
-這個 repo 不取代平鋪型 awesome 清單。已知道在找什麼時、用這些：
+這個 repo **不取代**平鋪型 awesome 清單，已知道在找什麼時用這些更直接：
 
 - [**hesreallyhim/awesome-claude-code**](https://github.com/hesreallyhim/awesome-claude-code) — Claude Code 廣泛資源 catalog（重整中）
 - [**wong2/awesome-mcp-servers**](https://github.com/wong2/awesome-mcp-servers) — 平鋪 MCP server 清單
 - [**punkpeye/awesome-mcp-servers**](https://github.com/punkpeye/awesome-mcp-servers) — 另一個 MCP 清單
 - [**travisvn/awesome-claude-skills**](https://github.com/travisvn/awesome-claude-skills) — Claude Skills catalog
 - [**modelcontextprotocol/servers**](https://github.com/modelcontextprotocol/servers) — 官方 MCP reference servers
-- [**datawhalechina/hello-agents**](https://github.com/datawhalechina/hello-agents) — Datawhale 中文教程（zh-CN）
-- [**WangRongsheng/awesome-LLM-resources**](https://github.com/WangRongsheng/awesome-LLM-resources) — 全世界最好的 LLM 資料總結（中文整理、8k+ stars）
-- [**HqWu-HITCS/Awesome-Chinese-LLM**](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM) — 中文開源大模型整理（22k+ stars）
+
+中文社群必看：
+- [**datawhalechina/hello-agents**](https://github.com/datawhalechina/hello-agents) — Datawhale 系統性 agent 教學（zh-CN）
+- [**WangRongsheng/awesome-LLM-resources**](https://github.com/WangRongsheng/awesome-LLM-resources) — 完整的中文 LLM 資源整理（8k+ stars）
+- [**HqWu-HITCS/Awesome-Chinese-LLM**](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM) — 中文開源大模型整理
 
 ---
 
-## Phase 1 現況
+## 🚧 Phase 1 現況
 
-目前是 Phase 1 — 7 階段骨架 + anchor curation（~80 個 project）。Phase 2 工作：
+目前是 **Phase 1** — 7 階段骨架 + anchor curation（115+ 個 project）。
 
-- 8 個 stage 頁面 + 4 個 branch 頁面**完整繁中翻譯**
-- 補到 100+ curated projects
-- 隨社群貢獻、降低自我引用比例
-- Stage 5 stack-at-a-glance SVG 升級版
-- `resources/style-guide.md` 術語一致性
+### Phase 2 計畫
+
+- 補到 130-160 curated projects
+- Stage 5 stack-at-a-glance SVG 升級版（取代 ASCII 圖）
+- 補 `resources/style-guide.md` 術語一致性
+- 教師 branch 內容擴充（目前最薄）
+- Phase 2 後考慮做 PDF / GitBook 版本
 
 ---
 
-## Contributing
+## 🤝 如何貢獻
 
-歡迎 PR。詳見 [CONTRIBUTING.md](CONTRIBUTING.md)。最有價值的貢獻：
+我們是開放社群、歡迎各種貢獻：
 
-- 新增 project 到對應 stage、附上「為什麼這 project 教那個 stage」說明
-- **將 stage 頁面翻譯成繁中**（最緊迫）
-- Flag 失維護或過期的 project
+- 🐛 **回報 Bug** — 內容錯誤、連結失效、過時資訊 → 開 Issue
+- 💡 **提建議** — 缺什麼 stage / 該加什麼 project → 開 Issue 討論
+- 📝 **完善內容** — 改進現有 stage 內容、修 typo → 直接 PR
+- ✍️ **新增 project** — 對某 stage 加 1-3 個新 project，附「為什麼這 project 教那個 stage」的說明
+- 🌏 **翻譯** — 補英文 companion 沒翻好的地方，或將內容翻成其他語言
+
+詳見 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+---
+
+## 🙏 致謝
+
+### Inspiration
+
+- [**Datawhale Hello-Agents**](https://github.com/datawhalechina/hello-agents) — 教學式系統性 agent tutorial 的範本，啟發本 repo 的 章節 + 進度 結構
+- [**Datawhale 整個社群**](https://github.com/datawhalechina) — 中文 ML 共學社群的標竿，多個 anchor projects 來自他們
+
+### 對位的 awesome lists
+
+- `wong2/awesome-mcp-servers`、`punkpeye/awesome-mcp-servers`、`hesreallyhim/awesome-claude-code` — 平鋪式 catalog 的好對手；本 repo 的差異化是「結構化路徑」
+
+### 個人
+
+- [@WenyuChiou](https://github.com/WenyuChiou) — Maintainer
+
+---
+
+## 🎓 引用
+
+如果這個學習地圖對你的學習或工作有幫助，歡迎引用：
+
+```bibtex
+@misc{awesome_agentic_ai_zh_2026,
+  title  = {awesome-agentic-ai-zh: A Structured Learning Roadmap for Agentic AI},
+  author = {Chiou, Wenyu},
+  year   = {2026},
+  url    = {https://github.com/WenyuChiou/awesome-agentic-ai-zh},
+  note   = {7-stage learning path from prerequisites to advanced multi-agent systems, with curated projects + hello-X demos. Bilingual (zh-TW / English).}
+}
+```
 
 ---
 
 ## License
 
 MIT。Maintained by [@WenyuChiou](https://github.com/WenyuChiou)。
+
+<div align="center">
+  <p>⭐ 如果這個 repo 對你有幫助，歡迎給個 Star — 這對作者繼續迭代很重要</p>
+</div>

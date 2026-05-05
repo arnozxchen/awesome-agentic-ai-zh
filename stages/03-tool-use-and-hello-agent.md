@@ -2,7 +2,7 @@
 
 > [English](./03-tool-use-and-hello-agent.en.md) | **繁體中文**
 
-⏱ **時間估計**：2-3 週（約 10-20 小時）
+⏱ **時間估算**：2-3 週（約 10-20 小時）
 
 這是整個學習路線最關鍵的一站。**你建過一個 agent 才算真懂 agent — Hello-X demo 不能跳。**
 
@@ -44,7 +44,7 @@
 一個需要連續呼叫 3-5 次 tool 的任務。例如：「找出台北人口，除以紐約人口，再把比例換成百分比。」每一步用不同的工具。
 
 ### Hello-5: 錯誤處理
-讓某個工具失敗（網路錯誤、輸入無效）。看看 agent 會怎麼回復（或回不來），加上 retry 機制。
+讓某個工具失敗（網路錯誤、輸入無效）。看看 agent 會怎麼處理錯誤、能不能恢復，再加上 retry 機制。
 
 ## 🎯 精選 Projects
 
@@ -52,10 +52,9 @@
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Anthropic（官方） |
 | 語言 | Python |
 | License | MIT |
-| 推薦 | ⭐⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
 
 **教什麼**：Claude 支援的所有 tool use 模式 — 單工具、多工具、平行呼叫、結構化輸出抽取。
 
@@ -70,14 +69,30 @@ jupyter notebook customer_service_agent.ipynb
 
 ---
 
+### [Anthropic — Quickstarts](https://github.com/anthropics/anthropic-quickstarts)
+
+| 欄位 | 內容 |
+|---|---|
+| 語言 | Python / TypeScript |
+| Stars | ★ 16k+ |
+| License | MIT |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
+
+**教什麼**：Anthropic 官方的 Hello-X 起手包。三個可直接 deploy 的 agent 範本：`financial-data-analyst`（資料分析 agent）、`customer-support-agent`（客服 agent）、`computer-use-demo`（讓 Claude 操作螢幕）。
+
+**適合誰**：跑完 Hello-1 / Hello-2 之後，想看「真的應用會長什麼樣子」的官方參考。比社群實作更 canonical，部署設定也比較完整。
+
+**備註**：每個範本都是獨立 sub-folder，挑一個有興趣的跑就好。Computer use demo 特別值得看 — 是少數示範 agent 操作 GUI 的官方範例。
+
+---
+
 ### [pguso/ai-agents-from-scratch](https://github.com/pguso/ai-agents-from-scratch)
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | pguso |
 | 語言 | Python |
 | License | MIT |
-| 推薦 | ⭐⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
 
 **教什麼**：用本地 LLM 從零打造 agent，零 framework。ReAct、function calling、memory，全部自己寫。設計目的就是把 framework 幫你藏起來的東西攤開給你看。
 
@@ -91,11 +106,10 @@ jupyter notebook customer_service_agent.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Arun Shankar（Google ML） |
 | 語言 | Python |
 | License | Apache-2.0 |
 | 最後更新 | ⚠️ 2025 年 5 月（更新放緩） |
-| 推薦 | ⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：ReAct pattern 的多種變體與實作，針對 Gemini 最佳化。
 
@@ -107,11 +121,10 @@ jupyter notebook customer_service_agent.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Matt Ambrogi |
 | 語言 | Python |
 | License | MIT |
 | 最後更新 | ⚠️ 已停滯（2024 年 1 月）— 留作教學玩具參考 |
-| 推薦 | ⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：最精簡的 ReAct agent 實作。為了學習而砍到只剩約 150 行程式碼。
 
@@ -123,11 +136,10 @@ jupyter notebook customer_service_agent.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | lsdefine |
 | 語言 | 中文 + Python |
 | Stars | ★ 9k+ |
 | License | MIT |
-| 推薦 | ⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：最精簡的自我演化 agent framework — 核心約 3K 行程式碼，agent 從 seed 自己長出技能樹。支援 Claude / Gemini / Kimi / MiniMax。仍在持續開發。
 
@@ -139,12 +151,11 @@ jupyter notebook customer_service_agent.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | jjyaoao（中文社群） |
 | 語言 | 中文（zh-CN）+ Python |
 | License | CC BY-NC-SA 4.0 |
-| 推薦 | ⭐⭐⭐⭐⭐（中文讀者） |
+| 推薦度 | ⭐⭐⭐⭐⭐（中文讀者） |
 
-**教什麼**：production 等級的多 agent framework，章節式教學，搭配 [Datawhale 的 Hello-Agents 教程](https://github.com/datawhalechina/hello-agents)。涵蓋 16 種能力（tool response、context engineering、session 持久化、sub-agents、circuit breaker、observability 等）。
+**教什麼**：教學導向的多 agent 練習框架，章節式教學，搭配 [Datawhale 的 Hello-Agents 教學](https://github.com/datawhalechina/hello-agents)。涵蓋 16 種能力（tool response、context engineering、session 持久化、sub-agents、circuit breaker、observability 等），用來學 production pattern 的教材，不是直接拿來上 production 的成品。
 
 **適合誰**：中文讀者。**請切到 `learn_version` 分支**，那才是對齊教材的版本。
 
@@ -162,14 +173,13 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | datawhalechina |
 | 語言 | 中文（zh-CN） |
 | License | CC BY-NC-SA |
-| 推薦 | ⭐⭐⭐⭐⭐（中文讀者） |
+| 推薦度 | ⭐⭐⭐⭐⭐（中文讀者） |
 
-**教什麼**：HelloAgents 的搭配教程。多章節導讀，從「什麼是 agent」一路講到 production 的實務 pattern。
+**教什麼**：HelloAgents 的搭配教學。多章節導讀，從「什麼是 agent」一路講到 production 的實務 pattern。
 
-**適合誰**：想要結構化教程加程式碼的中文讀者。
+**適合誰**：想要結構化教學加程式碼的中文讀者。
 
 **備註**：請搭配上面 HelloAgents repo 的 `learn_version` 分支一起看。
 
@@ -179,10 +189,9 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | QuantaLogic |
 | 語言 | Python |
 | License | Apache-2.0 |
-| 推薦 | ⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：產生 Python 程式碼（而不是 JSON tool call）的 ReAct agent。設計選擇不同 — agent 直接寫程式碼當作 action。
 
@@ -194,11 +203,10 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Hugging Face |
 | 語言 | Python |
 | Stars | ★ 27k+ |
 | License | Apache 2.0 |
-| 推薦 | ⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：Smol agents（≤1000 LOC）。會寫程式碼的 agent — 執行 Python 而不是 JSON tool call。
 
@@ -212,10 +220,9 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | LangChain Inc. |
 | 語言 | Python |
 | License | MIT |
-| 推薦 | ⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：framework 怎麼把 ReAct pattern 抽象化。LangGraph Studio 的範本。
 
@@ -225,9 +232,10 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 ### [Anthropic — Building Effective Agents（部落格文章）](https://www.anthropic.com/engineering/building-effective-agents)
 
-| 格式 | 文章 |
+| 欄位 | 內容 |
 |---|---|
-| 推薦 | ⭐⭐⭐⭐⭐ |
+| 形式 | 文章 |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
 
 **教什麼**：Anthropic 自己寫的指南 — 什麼時候該用 agent（vs. workflow）、常見 pattern、容易踩的坑。Stage 4 之前必讀。
 

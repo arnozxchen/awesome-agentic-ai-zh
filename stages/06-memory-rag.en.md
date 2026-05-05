@@ -29,8 +29,9 @@ Agents that don't remember past interactions are not useful. RAG (Retrieval-Augm
 
 ### [LlamaIndex](https://github.com/run-llama/llama_index)
 
-| Stars | ★ 49k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 49k+ |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 
 **What it teaches**: The RAG-focused framework. Document loaders, chunking strategies, retrieval patterns, query engines.
@@ -41,8 +42,9 @@ Agents that don't remember past interactions are not useful. RAG (Retrieval-Augm
 
 ### [Chroma](https://github.com/chroma-core/chroma)
 
-| Stars | ★ 27k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 27k+ |
 | License | Apache-2.0 |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 
@@ -63,8 +65,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [Qdrant](https://github.com/qdrant/qdrant)
 
-| Stars | ★ 31k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 31k+ |
 | Recommendation | ⭐⭐⭐⭐ |
 
 **What it teaches**: Production-grade vector DB written in Rust. Faster than Chroma at scale.
@@ -75,8 +78,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [Weaviate](https://github.com/weaviate/weaviate)
 
-| Stars | ★ 16k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 16k+ |
 | Recommendation | ⭐⭐⭐⭐ |
 
 **What it teaches**: Vector DB with built-in modules (text2vec, generative, classification). Schema-driven.
@@ -87,8 +91,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [pgvector](https://github.com/pgvector/pgvector)
 
-| Stars | ★ 21k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 21k+ |
 | Recommendation | ⭐⭐⭐⭐ |
 
 **What it teaches**: Vector similarity search inside PostgreSQL. SQL + vector in one DB.
@@ -107,8 +112,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [mem0ai/mem0](https://github.com/mem0ai/mem0)
 
-| Stars | ★ 54k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 54k+ |
 | Recommendation | ⭐⭐⭐⭐ |
 
 **What it teaches**: Self-improving memory layer for AI agents. Stores facts about users across sessions.
@@ -119,8 +125,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [Letta (formerly MemGPT)](https://github.com/letta-ai/letta)
 
-| Stars | ★ 22k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 22k+ |
 | Recommendation | ⭐⭐⭐⭐ |
 
 **What it teaches**: Long-context agent with hierarchical memory. Inspired by OS memory management.
@@ -133,7 +140,6 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 | Field | Value |
 |---|---|
-| Maintainer | chatchat-space |
 | Language | 中文 + Python |
 | Stars | ★ 38k+ |
 | License | Apache-2.0 |

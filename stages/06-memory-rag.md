@@ -2,7 +2,7 @@
 
 > [English](./06-memory-rag.en.md) | **繁體中文**
 
-⏱ **時間估計**：2 週（約 10 小時）
+⏱ **時間估算**：2 週（約 10 小時）
 
 不會記住過去互動的 agent 沒什麼用。RAG（Retrieval-Augmented Generation）是目前的標準做法。這一章兩個都會講到。
 
@@ -31,8 +31,9 @@
 
 ### [LlamaIndex](https://github.com/run-llama/llama_index)
 
-| Stars | ★ 49k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 49k+ |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
 
 **教什麼**：以 RAG 為核心的 framework。document loader、切塊策略、retrieval pattern、query engine。
@@ -43,8 +44,9 @@
 
 ### [Chroma](https://github.com/chroma-core/chroma)
 
-| Stars | ★ 27k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 27k+ |
 | License | Apache-2.0 |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
 
@@ -65,11 +67,12 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [Qdrant](https://github.com/qdrant/qdrant)
 
-| Stars | ★ 31k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 31k+ |
 | 推薦度 | ⭐⭐⭐⭐ |
 
-**教什麼**：production 等級的 vector DB,用 Rust 寫的。規模大時比 Chroma 快。
+**教什麼**：production 等級的 vector DB，用 Rust 寫，規模大時比 Chroma 快。
 
 **適合誰**：當 Chroma 跟不上時。有雲端版跟自架版。
 
@@ -77,8 +80,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [Weaviate](https://github.com/weaviate/weaviate)
 
-| Stars | ★ 16k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 16k+ |
 | 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：有內建模組（text2vec、generative、classification）的 vector DB。schema 驅動。
@@ -89,8 +93,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [pgvector](https://github.com/pgvector/pgvector)
 
-| Stars | ★ 21k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 21k+ |
 | 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：在 PostgreSQL 裡做向量相似度搜尋。SQL 跟向量同一個 DB。
@@ -109,25 +114,27 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [mem0ai/mem0](https://github.com/mem0ai/mem0)
 
-| Stars | ★ 54k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 54k+ |
 | 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：給 AI agent 用的自我精煉 memory 層。跨 session 儲存使用者的事實。
 
-**適合誰**：個人助理 / chatbot 應用,需要使用者層級 memory 的場景。
+**適合誰**：個人助理或 chatbot，需要使用者層級 memory 的場景。
 
 ---
 
 ### [Letta（前身 MemGPT）](https://github.com/letta-ai/letta)
 
-| Stars | ★ 22k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 22k+ |
 | 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：有階層式 memory 的長 context agent。靈感來自 OS 的 memory management。
 
-**適合誰**：context 要跑非常久的 agent（用月在算,不是用分鐘算）。
+**適合誰**：context 要跑很久的 agent（以月為單位、不是分鐘）。
 
 ---
 
@@ -135,13 +142,12 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | chatchat-space |
 | 語言 | 中文 + Python |
 | Stars | ★ 38k+ |
 | License | Apache-2.0 |
 | 推薦度 | ⭐⭐⭐⭐ |
 
-**教什麼**：中文社群最廣泛使用的 RAG + Agent 應用 framework。可離線部署的知識庫問答,中文友善的預設值。支援 ChatGLM / Qwen / Llama / Ollama 後端。
+**教什麼**：中文社群最廣泛使用的 RAG + Agent 應用 framework，可離線部署、中文友善的預設值，支援 ChatGLM / Qwen / Llama / Ollama 後端。
 
 **適合誰**：要做知識庫 / RAG 應用的中文使用者。預設值對中文斷詞 + embedding 處理得不錯。
 
@@ -151,9 +157,9 @@ results = collection.query(query_texts=["query"], n_results=1)
 
 ### [Anthropic — Contextual Retrieval cookbook](https://platform.claude.com/cookbook/capabilities-contextual-embeddings-guide)
 
-**教什麼**：Anthropic 的 contextual retrieval 技巧搭配 prompt caching,有完整端到端範例。
+**教什麼**：Anthropic 的 contextual retrieval 技巧搭配 prompt caching，附完整端到端範例。
 
-**適合誰**：跑完基本 RAG 之後,升級到 contextual retrieval,在長文件上 recall 更好。
+**適合誰**：跑完基本 RAG 之後想升級到 contextual retrieval、在長文件上拿到更好 recall 的人。
 
 **備註**：Anthropic 在 2025 年把 `anthropic-cookbook` 改名為 `claude-cookbooks`。上面的線上 notebook 是現在的標準參考；GitHub 上的原始路徑可能會變動。
 
@@ -164,7 +170,7 @@ results = collection.query(query_texts=["query"], n_results=1)
 你能不能：
 - [ ] 寫一條 50 行的 RAG 流水線（load → chunk → embed → store → query → answer）
 - [ ] 解釋為什麼天真的切塊在長文件上會失敗
-- [ ] 在某個規模下,在 Chroma、Qdrant、pgvector 之間做選擇
+- [ ] 在某個規模下，能在 Chroma、Qdrant、pgvector 之間做出選擇
 - [ ] 區分「給 agent memory」跟「用 RAG」這兩件事
 
 如果都可以 → 前往 [Stage 7 — Multi-Agent · Production](07-multi-agent-production.md)。

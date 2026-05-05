@@ -49,7 +49,6 @@
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | DAIR.AI |
 | Stars | ★ 60k+ |
 | License | MIT |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
@@ -62,8 +61,9 @@
 
 ### [f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 
-| Stars | ★ 130k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 130k+ |
 | License | CC0 |
 | 推薦度 | ⭐⭐⭐ |
 
@@ -83,8 +83,9 @@
 
 ### [microsoft/prompt-engine](https://github.com/microsoft/prompt-engine)
 
-| 推薦度 | ⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：管理大量 prompt 的 TypeScript library（樣板、對話歷史）。
 
@@ -94,8 +95,9 @@
 
 ### [microsoft/promptflow](https://github.com/microsoft/promptflow)
 
-| Stars | ★ 10k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 10k+ |
 | 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：視覺化 prompt 設計 + 評估工具。
@@ -106,8 +108,9 @@
 
 ### [GoogleCloudPlatform/generative-ai](https://github.com/GoogleCloudPlatform/generative-ai)
 
-| 推薦度 | ⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：Google Cloud 的 prompting cookbook（notebook，PaLM/Gemini 為主）。
 

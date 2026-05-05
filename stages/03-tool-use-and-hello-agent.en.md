@@ -50,7 +50,6 @@ Make a tool fail (network error, invalid input). Watch how the agent recovers (o
 
 | Field | Value |
 |---|---|
-| Maintainer | Anthropic (official) |
 | Language | Python |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐⭐ |
@@ -68,11 +67,27 @@ jupyter notebook customer_service_agent.ipynb
 
 ---
 
+### [Anthropic — Quickstarts](https://github.com/anthropics/anthropic-quickstarts)
+
+| Field | Value |
+|---|---|
+| Language | Python / TypeScript |
+| Stars | ★ 16k+ |
+| License | MIT |
+| Recommendation | ⭐⭐⭐⭐⭐ |
+
+**What it teaches**: Anthropic's official Hello-X starter kit. Three deployable agent templates: `financial-data-analyst` (data analysis agent), `customer-support-agent`, and `computer-use-demo` (Claude operating a screen).
+
+**Best for**: After Hello-1/Hello-2, when you want to see "what does a real application look like" from the canonical source. More polished than community implementations, with proper deployment setup.
+
+**Notes**: Each template is a self-contained sub-folder — pick one and run it. The computer-use demo is especially worth studying as one of the few official examples of a GUI-operating agent.
+
+---
+
 ### [pguso/ai-agents-from-scratch](https://github.com/pguso/ai-agents-from-scratch)
 
 | Field | Value |
 |---|---|
-| Maintainer | pguso |
 | Language | Python |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐⭐ |
@@ -89,7 +104,6 @@ jupyter notebook customer_service_agent.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | Arun Shankar (Google ML) |
 | Language | Python |
 | License | Apache-2.0 |
 | Last update | ⚠️ May 2025 (slowing) |
@@ -105,7 +119,6 @@ jupyter notebook customer_service_agent.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | Matt Ambrogi |
 | Language | Python |
 | License | MIT |
 | Last update | ⚠️ Stale (Jan 2024) — kept as educational toy reference |
@@ -121,7 +134,6 @@ jupyter notebook customer_service_agent.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | lsdefine |
 | Language | 中文 + Python |
 | Stars | ★ 9k+ |
 | License | MIT |
@@ -137,12 +149,11 @@ jupyter notebook customer_service_agent.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | jjyaoao (Chinese community) |
 | Language | 中文 (zh-CN) + Python |
 | License | CC BY-NC-SA 4.0 |
 | Recommendation | ⭐⭐⭐⭐⭐ for zh readers |
 
-**What it teaches**: Production-grade multi-agent framework taught chapter-by-chapter, paired with [Datawhale's Hello-Agents tutorial](https://github.com/datawhalechina/hello-agents). 16 capabilities (tool response, context engineering, session persistence, sub-agents, circuit breaker, observability, etc.).
+**What it teaches**: Teaching-oriented multi-agent practice framework taught chapter-by-chapter, paired with [Datawhale's Hello-Agents tutorial](https://github.com/datawhalechina/hello-agents). 16 capabilities (tool response, context engineering, session persistence, sub-agents, circuit breaker, observability, etc.) — material to *learn* production patterns from, not a finished production-ready product itself.
 
 **Best for**: Chinese-speaking learners. **Switch to the `learn_version` branch** for the tutorial-aligned version.
 
@@ -160,7 +171,6 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | Field | Value |
 |---|---|
-| Maintainer | datawhalechina |
 | Language | 中文 (zh-CN) |
 | License | CC BY-NC-SA |
 | Recommendation | ⭐⭐⭐⭐⭐ for zh readers |
@@ -177,7 +187,6 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | Field | Value |
 |---|---|
-| Maintainer | QuantaLogic |
 | Language | Python |
 | License | Apache-2.0 |
 | Recommendation | ⭐⭐⭐ |
@@ -192,7 +201,6 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | Field | Value |
 |---|---|
-| Maintainer | Hugging Face |
 | Language | Python |
 | Stars | ★ 27k+ |
 | License | Apache 2.0 |
@@ -210,7 +218,6 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 | Field | Value |
 |---|---|
-| Maintainer | LangChain Inc. |
 | Language | Python |
 | License | MIT |
 | Recommendation | ⭐⭐⭐ |
@@ -223,8 +230,9 @@ git clone -b learn_version https://github.com/jjyaoao/HelloAgents
 
 ### [Anthropic — Building Effective Agents (blog post)](https://www.anthropic.com/engineering/building-effective-agents)
 
-| Format | Article |
+| Field | Value |
 |---|---|
+| Format | Article |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 
 **What it teaches**: Anthropic's own guide to when to use agents (vs. workflows), common patterns, and pitfalls. Required reading before Stage 4.

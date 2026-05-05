@@ -33,7 +33,6 @@
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | 誰在維護 |
 | 語言 | Python / TS / etc. |
 | Stars | ★ k |
 | License | MIT / Apache 2 / ... |

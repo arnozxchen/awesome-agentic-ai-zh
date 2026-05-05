@@ -88,7 +88,6 @@ After this stage you will be able to extend Claude Code, write your own MCP serv
 
 | Field | Value |
 |---|---|
-| Maintainer | Anthropic (official) |
 | Language | TypeScript / Python |
 | Stars | ★ 85k+ |
 | License | MIT |
@@ -111,7 +110,6 @@ pip install mcp-server-fetch
 
 | Field | Value |
 |---|---|
-| Maintainer | Anthropic (official) |
 | Language | Python |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐⭐ |
@@ -130,7 +128,6 @@ pip install mcp
 
 | Field | Value |
 |---|---|
-| Maintainer | Anthropic (official) |
 | Language | TypeScript |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐ |
@@ -143,7 +140,6 @@ pip install mcp
 
 | Field | Value |
 |---|---|
-| Maintainer | wong2 |
 | Format | Curated list |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 
@@ -157,7 +153,7 @@ pip install mcp
 
 #### [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
 
-| Maintainer | punkpeye |
+| Field | Value |
 |---|---|
 | Recommendation | ⭐⭐⭐⭐ |
 
@@ -171,7 +167,6 @@ pip install mcp
 
 | Field | Value |
 |---|---|
-| Maintainer | GitHub |
 | Recommendation | ⭐⭐⭐⭐ |
 
 **What it teaches**: How a real production MCP server is structured. Official GitHub-maintained.
@@ -210,61 +205,31 @@ pip install mcp
 
 ### Curated Projects
 
-#### [anthropics/claude-code (official skills examples)](https://github.com/anthropics/claude-code)
+#### [anthropics/skills](https://github.com/anthropics/skills) ⭐ Official spec
 
+| Field | Value |
+|---|---|
+| Stars | ★ 128k+ |
+| License | NOASSERTION |
 | Recommendation | ⭐⭐⭐⭐⭐ |
-|---|---|
 
-**What it teaches**: Official skill examples maintained by Anthropic. Reference for SKILL.md structure.
+**What it teaches**: Anthropic's official Skills repo — `spec/` (SKILL.md frontmatter standard), `template/` (starter scaffold), and `skills/` (reference implementations: pdf, docx, xlsx, pptx, skill-creator).
 
----
+**Best for**: Read this before writing your own SKILL.md — an important reference implementation for SKILL.md structure and frontmatter.
 
-#### [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills)
-
-| Field | Value |
-|---|---|
-| Maintainer | Wenyu Chiou |
-| Stars | ★ 41+ |
-| License | MIT |
-| Recommendation | ⭐⭐⭐⭐ |
-
-**What it teaches**: 5-plugin marketplace, 14 research skills covering literature triage, paper memory building, NotebookLM verification, Zotero curation. **Multi-plugin marketplace pattern.**
-
-**Best for**: Studying how a marketplace catalogs multiple plugins from different source repos.
-
-**Run it**:
-```bash
-claude plugin marketplace add WenyuChiou/ai-research-skills
-claude plugin install research-workspace@ai-research-skills
-```
+**Notes**: Different from `anthropics/claude-code` — this repo is the dedicated Skills repo; the other is the main Claude Code repo. The broader Agent Skills standard is at [agentskills.io](https://agentskills.io).
 
 ---
 
-#### [WenyuChiou/agent-collab-skills](https://github.com/WenyuChiou/agent-collab-skills)
+#### [anthropics/claude-code](https://github.com/anthropics/claude-code)
 
 | Field | Value |
 |---|---|
-| Maintainer | Wenyu Chiou |
-| License | MIT |
 | Recommendation | ⭐⭐⭐⭐ |
 
-**What it teaches**: 5 skills for multi-agent orchestration (task splitter, output reconciler, debate, shared memory, acceptance gate). **Single-plugin bundle pattern.**
+**What it teaches**: The Claude Code main repo — issues, releases, and inline skill examples.
 
-**Best for**: Studying how a single-plugin marketplace bundles related skills.
-
----
-
-#### [WenyuChiou/codex-delegate](https://github.com/WenyuChiou/codex-delegate)
-
-| Field | Value |
-|---|---|
-| Stars | ★ 57+ |
-| License | MIT |
-| Recommendation | ⭐⭐⭐⭐ |
-
-**What it teaches**: Single-skill repo for delegating from Claude Code to Codex CLI. Wrapper script + result.json contract pattern.
-
-**Best for**: Single-skill plugin pattern + sub-CLI delegation pattern.
+**Best for**: Tracking new features, filing bugs, reading release notes.
 
 ---
 
@@ -312,6 +277,34 @@ claude plugin install research-workspace@ai-research-skills
 
 ---
 
+#### [mattpocock/skills](https://github.com/mattpocock/skills)
+
+| Field | Value |
+|---|---|
+| Stars | ★ 59k+ |
+| License | MIT |
+| Recommendation | ⭐⭐⭐⭐ |
+
+**What it teaches**: Matt Pocock (well-known TypeScript educator) publishing his actual `.claude/` directory. Each SKILL.md is short (10-50 lines) and not over-engineered.
+
+**Best for**: Seeing what real engineer-daily SKILL.md files look like. A great counter-example to over-engineered 200-line skills.
+
+---
+
+#### [wshobson/agents](https://github.com/wshobson/agents)
+
+| Field | Value |
+|---|---|
+| Stars | ★ 35k+ |
+| License | MIT |
+| Recommendation | ⭐⭐⭐⭐ |
+
+**What it teaches**: Combining skills + subagents into multi-agent orchestration. **Goes from single SKILL.md to the agent-as-skill composition pattern.**
+
+**Best for**: Intermediate learners after a few SKILL.md files — when you want to know "how do skills call each other and turn into bigger agent workflows?"
+
+---
+
 ## 5.4 — Plugins & Marketplaces
 
 ### Learning Goals
@@ -332,21 +325,49 @@ claude plugin install research-workspace@ai-research-skills
 
 ### Curated Projects
 
-#### [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills) (multi-plugin marketplace pattern)
+#### [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) ⭐ Official
 
-Already cited in 5.3. Read its `.claude-plugin/marketplace.json` to study the multi-plugin pattern (5 plugins across 5 source repos).
+| Field | Value |
+|---|---|
+| Stars | ★ 18k+ |
+| License | NOASSERTION (each plugin has its own license; check per plugin) |
+| Recommendation | ⭐⭐⭐⭐⭐ |
+
+**What it teaches**: Anthropic's official marketplace template — `.claude-plugin/marketplace.json` standard schema, `plugins/` for inline plugins, and `external_plugins/` for plugins referenced from external repos.
+
+**Best for**: The authoritative answer to "**what should marketplace.json look like?**" Required reading before publishing your own marketplace.
+
+**Notes**: Beyond schema, this also shows how Anthropic categorizes its official plugins (chrome-devtools, deepwiki, code-research, jam, etc.).
 
 ---
 
-#### [WenyuChiou/agent-collab-skills](https://github.com/WenyuChiou/agent-collab-skills) (single-plugin bundle pattern)
+#### [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace)
 
-Read its `.claude-plugin/marketplace.json` and `.claude-plugin/plugin.json` to study the single-plugin bundle pattern.
+| Field | Value |
+|---|---|
+| Stars | ★ 900+ |
+| License | MIT |
+| Recommendation | ⭐⭐⭐⭐ |
+
+**What it teaches**: **The minimal marketplace template** — the repo contains only `.claude-plugin/marketplace.json` + README; the plugin source itself lives in external repos. Demonstrates the **curator-only marketplace** form (the curator selects, doesn't bundle source).
+
+**Best for**: Building a "I curate, others write" marketplace. Smaller than `anthropics/claude-plugins-official` — the minimum viable template.
 
 ---
 
-#### [obra/superpowers](https://github.com/obra/superpowers) (production marketplace)
+#### [trailofbits/skills-curated](https://github.com/trailofbits/skills-curated)
 
-A larger, battle-tested marketplace. Read its packaging structure.
+| Field | Value |
+|---|---|
+| Stars | ★ 388 |
+| License | CC-BY-SA-4.0 |
+| Recommendation | ⭐⭐⭐ |
+
+**What it teaches**: A curated marketplace from the well-known security firm Trail of Bits, focused on **supply-chain security** — every skill is reviewed, and the README documents the criteria.
+
+**Best for**: Reviewers and teams who care about supply-chain trust and want to study the **curator-vouches-for-safety** model.
+
+**Notes**: Small in scale but significant in framing — shows that a marketplace can be more than a list, it can be a trust mechanism.
 
 ---
 
@@ -375,6 +396,6 @@ If yes → proceed to [Stage 6 — Memory & RAG](06-memory-rag.md).
 
 ## 💡 Bonus: After this Stage
 
-- Submit a PR to `anthropics/claude-code` cookbook (small fix, doc update)
+- Submit a PR to [`anthropics/claude-cookbooks`](https://github.com/anthropics/claude-cookbooks) (small fix, doc update)
 - Submit your own plugin to a community marketplace
 - Write a blog post comparing your hello-MCP server with one from the official `modelcontextprotocol/servers` collection

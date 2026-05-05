@@ -31,7 +31,6 @@ Each project in a stage page should follow this format:
 
 | Field | Value |
 |---|---|
-| Maintainer | who runs it |
 | Language | Python / TS / etc. |
 | Stars | ★ k |
 | License | MIT / Apache 2 / ... |

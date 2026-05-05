@@ -58,7 +58,6 @@ print(msg.content[0].text)
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Anthropic（官方） |
 | 語言 | Python |
 | Stars | ★ 42k+ |
 | License | MIT |
@@ -80,11 +79,27 @@ jupyter notebook guide.ipynb
 
 ---
 
+### [Anthropic Courses](https://github.com/anthropics/courses)
+
+| 欄位 | 內容 |
+|---|---|
+| 語言 | Python / Jupyter |
+| Stars | ★ 21k+ |
+| License | NOASSERTION（上游未提供 SPDX；使用前請讀 LICENSE） |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
+
+**教什麼**：Anthropic 官方教育課程系列——API 基礎、prompt evaluation、real-world prompting、tool use、Claude with Excel。每門課都是 Jupyter notebook 形式，可以邊讀邊跑。
+
+**適合誰**：剛開始用 Claude API 的人。跟 Cookbook 互補：Cookbook 是「想做 X 怎麼做」的查詢手冊，Courses 是「從零開始系統性學一遍」的完整課程。
+
+**備註**：跟 Cookbook 一起用效果最好。建議先跑 `anthropic_api_fundamentals` 跟 `prompt_engineering_interactive_tutorial`。
+
+---
+
 ### [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | OpenAI（官方） |
 | 語言 | Python / Jupyter |
 | Stars | ★ 73k+ |
 | License | MIT |
@@ -102,7 +117,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | LangChain Inc. |
 | 形式 | 免費線上課程 |
 | 推薦度 | ⭐⭐⭐⭐ |
 
@@ -118,7 +132,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | datawhalechina |
 | 語言 | 中文（zh-CN） |
 | Stars | ★ 29k+ |
 | License | Custom |
@@ -134,13 +147,12 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | datawhalechina |
 | 語言 | 中文（zh-CN） |
 | Stars | ★ 12k+ |
 | License | NOASSERTION |
 | 推薦度 | ⭐⭐⭐⭐ |
 
-**教什麼**：面向小白開發者的大模型應用開發教程。涵蓋 API 基礎、知識庫、RAG、進階技巧。
+**教什麼**：面向新手開發者的大模型應用開發教學。涵蓋 API 基礎、知識庫、RAG、進階技巧。
 
 **適合誰**：想用 LLM *做點東西*（不只是理解）的中文新手。
 
@@ -150,7 +162,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | jingyaogong |
 | 語言 | 中文 + Python |
 | Stars | ★ 48k+ |
 | License | Apache-2.0 |
@@ -166,7 +177,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | datawhalechina（中文 ML 社群） |
 | 語言 | 中文（zh-CN） |
 | Stars | ★ 23k+ |
 | 最後更新 | ⚠️ 已停滯（2025 年 6 月；停約 1 年） |
@@ -185,7 +195,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Hugging Face |
 | 形式 | 免費線上課程 + notebook |
 | License | Apache 2.0 |
 | 推薦度 | ⭐⭐⭐⭐ |
@@ -202,7 +211,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Andrej Karpathy |
 | 狀態 | ⚠️ 已封存（最後更新 2024 年 8 月）；只有大綱，從未真正寫完 |
 | 推薦度 | ⭐⭐ |
 
@@ -218,7 +226,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Anthropic（官方） |
 | 形式 | 文件 |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
 
@@ -232,7 +239,6 @@ jupyter notebook guide.ipynb
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Andrej Karpathy |
 | 形式 | YouTube 影片（2 小時） |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
 

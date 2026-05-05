@@ -48,7 +48,6 @@ Use LangGraph to build a workflow with branching logic and human-in-the-loop che
 
 | Field | Value |
 |---|---|
-| Maintainer | LangChain Inc. |
 | Language | Python / TypeScript |
 | Stars | ★ 31k+ |
 | License | MIT |
@@ -72,7 +71,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | CrewAI Inc. |
 | Language | Python |
 | Stars | ★ 50k+ |
 | License | MIT |
@@ -90,7 +88,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | Microsoft Research |
 | Language | Python |
 | Stars | ★ 57k+ |
 | License | CC-BY-4.0 (note: license is for documentation; code released separately) |
@@ -108,7 +105,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | Hugging Face |
 | Language | Python |
 | Stars | ★ 27k+ |
 | License | Apache 2.0 |
@@ -126,7 +122,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | OpenAI |
 | Language | Python |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐ |
@@ -143,7 +138,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | LlamaIndex |
 | Language | Python |
 | Stars | ★ 49k+ |
 | License | MIT |
@@ -161,7 +155,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | Pydantic team |
 | Language | Python |
 | License | MIT |
 | Recommendation | ⭐⭐⭐ |
@@ -178,7 +171,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | agentscope (Alibaba origin) |
 | Language | Python |
 | License | Apache 2.0 |
 | Recommendation | ⭐⭐⭐ |
@@ -195,7 +187,6 @@ pip install langgraph langchain-anthropic
 
 | Field | Value |
 |---|---|
-| Maintainer | LangChain Inc. |
 | Language | Python / TypeScript |
 | Stars | ★ 135k+ |
 | License | MIT |

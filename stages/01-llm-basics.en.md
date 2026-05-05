@@ -56,7 +56,6 @@ Calculate the actual dollar cost of running 1000 inferences for your hello-world
 
 | Field | Value |
 |---|---|
-| Maintainer | Anthropic (official) |
 | Language | Python |
 | Stars | ★ 42k+ |
 | License | MIT |
@@ -78,11 +77,27 @@ jupyter notebook guide.ipynb
 
 ---
 
+### [Anthropic Courses](https://github.com/anthropics/courses)
+
+| Field | Value |
+|---|---|
+| Language | Python / Jupyter |
+| Stars | ★ 21k+ |
+| License | NOASSERTION (no SPDX upstream; check LICENSE before use) |
+| Recommendation | ⭐⭐⭐⭐⭐ |
+
+**What it teaches**: Anthropic's official educational course series — API fundamentals, prompt evaluation, real-world prompting, tool use, Claude with Excel. Each course is a Jupyter notebook you can read and run.
+
+**Best for**: Anyone starting with the Claude API. Complements the Cookbook: Cookbook is a "how do I do X?" lookup, Courses is a "learn it from zero, end-to-end" tutorial.
+
+**Notes**: Pair it with Cookbook for best results. Start with `anthropic_api_fundamentals` and `prompt_engineering_interactive_tutorial`.
+
+---
+
 ### [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
 
 | Field | Value |
 |---|---|
-| Maintainer | OpenAI (official) |
 | Language | Python / Jupyter |
 | Stars | ★ 73k+ |
 | License | MIT |
@@ -100,7 +115,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | LangChain Inc. |
 | Format | Free online courses |
 | Recommendation | ⭐⭐⭐⭐ |
 
@@ -116,7 +130,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | datawhalechina |
 | Language | 中文 (zh-CN) |
 | Stars | ★ 29k+ |
 | License | Custom |
@@ -132,7 +145,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | datawhalechina |
 | Language | 中文 (zh-CN) |
 | Stars | ★ 12k+ |
 | License | NOASSERTION |
@@ -148,7 +160,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | jingyaogong |
 | Language | 中文 + Python |
 | Stars | ★ 48k+ |
 | License | Apache-2.0 |
@@ -164,7 +175,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | datawhalechina (Chinese ML community) |
 | Language | 中文 (zh-CN) |
 | Stars | ★ 23k+ |
 | Last update | ⚠️ Stale (Jun 2025; ~1 year inactive) |
@@ -183,7 +193,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | Hugging Face |
 | Format | Free online course + notebooks |
 | License | Apache 2.0 |
 | Recommendation | ⭐⭐⭐⭐ |
@@ -200,7 +209,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | Andrej Karpathy |
 | Status | ⚠️ Archived (last update Aug 2024); outline only — never built out |
 | Recommendation | ⭐⭐ |
 
@@ -216,7 +224,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | Anthropic (official) |
 | Format | Documentation |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 
@@ -230,7 +237,6 @@ jupyter notebook guide.ipynb
 
 | Field | Value |
 |---|---|
-| Maintainer | Andrej Karpathy |
 | Format | YouTube video (2 hours) |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 

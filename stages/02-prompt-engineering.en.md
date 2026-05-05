@@ -47,7 +47,6 @@ Take a vague prompt, refine it 5 times. Track the iterations. Notice what change
 
 | Field | Value |
 |---|---|
-| Maintainer | DAIR.AI |
 | Stars | ★ 60k+ |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐⭐ |
@@ -60,8 +59,9 @@ Take a vague prompt, refine it 5 times. Track the iterations. Notice what change
 
 ### [f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)
 
-| Stars | ★ 130k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 130k+ |
 | License | CC0 |
 | Recommendation | ⭐⭐⭐ |
 
@@ -92,8 +92,9 @@ Take a vague prompt, refine it 5 times. Track the iterations. Notice what change
 
 ### [microsoft/promptflow](https://github.com/microsoft/promptflow)
 
-| Stars | ★ 10k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 10k+ |
 | Recommendation | ⭐⭐⭐ |
 
 **What it teaches**: Visual prompt design + evaluation tooling.

@@ -28,16 +28,39 @@ Hosted workflow automation. Strong AI integration nodes.
 
 ### Knowledge Worker Skills
 
-#### [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills) ⭐⭐⭐⭐
-
-While positioned for researchers, several skills work for knowledge workers:
-- `literature-triage-matrix` — works for any document set, not just papers
-- `paper-memory-builder` — extracts structured data from any document
-- `notebooklm-brief-verifier` — verify any AI-generated brief against sources
-
 #### [obra/superpowers](https://github.com/obra/superpowers) ⭐⭐⭐⭐
 
 Brainstorming, planning, and decision-making skills.
+
+---
+
+### Knowledge Management / Personal AI
+
+#### [khoj-ai/khoj](https://github.com/khoj-ai/khoj) ⭐⭐⭐⭐
+
+| Field | Value |
+|---|---|
+| Stars | ★ 34k+ |
+| License | AGPL-3.0 |
+
+**What it teaches**: Self-hosted "second brain" — chat with web + local docs, schedule automations, build custom agents.
+
+**Best for**: People wanting a self-hosted personal knowledge base + AI assistant.
+
+**Notes**: AGPL-3.0 license (copyleft).
+
+---
+
+#### [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) ⭐⭐⭐⭐⭐
+
+| Field | Value |
+|---|---|
+| Stars | ★ 60k+ |
+| License | MIT |
+
+**What it teaches**: All-in-one private RAG workspace — upload documents, build agents, MCP-compatible, on-device by default. **A self-hosted alternative to NotebookLM**.
+
+**Best for**: Knowledge workers wanting a NotebookLM-style tool, self-hosted, without sending data to the cloud.
 
 ---
 

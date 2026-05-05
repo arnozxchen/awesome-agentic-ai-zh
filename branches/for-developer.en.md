@@ -4,11 +4,11 @@
 
 ## Use Cases
 
-- AI pair programming (Cursor, Aider, Claude Code)
+- AI pair programming (Cursor, Aider, Claude Code, Cline, Continue)
 - Code review automation
 - Test generation
 - Multi-agent coding tasks (planning + execution)
-- CLI delegation (Codex, Gemini for token-heavy code)
+- IDE integration and CI governance
 
 ## Curated Projects
 
@@ -17,22 +17,20 @@
 #### [Cursor](https://www.cursor.com/) ⭐⭐⭐⭐⭐
 Editor-integrated AI pair programmer. Industry standard for AI-assisted coding.
 
-#### [Aider](https://github.com/Aider-AI/aider) ⭐⭐⭐⭐⭐
-CLI pair programmer that edits code in your repo. Open source, model-agnostic. Strong for terminal users.
+#### [Aider-AI/aider](https://github.com/Aider-AI/aider) ⭐⭐⭐⭐⭐
+★ 44k+ · Apache-2.0 — git-aware CLI pair-programmer. Edits files in your repo directly and writes commits for you. **The open-source reference for "git-native AI editing."** Model-agnostic.
 
 #### [anthropics/claude-code](https://github.com/anthropics/claude-code) ⭐⭐⭐⭐⭐
 Anthropic's official agentic coding assistant. Skills + plugins ecosystem.
 
+#### [cline/cline](https://github.com/cline/cline) ⭐⭐⭐⭐⭐
+★ 61k+ · Apache-2.0 — VS Code extension, autonomous in-IDE agent: tool use, browser, step-by-step approval. **The first pick for VS Code users wanting IDE-native agentic dev.**
+
+#### [continuedev/continue](https://github.com/continuedev/continue) ⭐⭐⭐⭐
+★ 33k+ · Apache-2.0 — source-controlled AI checks, enforceable in CI. Represents the **team / governance** angle on coding agents.
+
 #### [OpenHands (formerly OpenDevin)](https://github.com/All-Hands-AI/OpenHands) ⭐⭐⭐⭐
 Open-source autonomous software development agent.
-
-### CLI Delegation
-
-#### [WenyuChiou/codex-delegate](https://github.com/WenyuChiou/codex-delegate) ⭐⭐⭐⭐
-Claude Code skill for delegating token-heavy code work to Codex CLI. Wrapper script + result.json contract pattern.
-
-#### [WenyuChiou/gemini-delegate-skill](https://github.com/WenyuChiou/gemini-delegate-skill) ⭐⭐⭐⭐
-Same pattern but for Gemini CLI — long-context synthesis, bilingual drafting, second-opinion review.
 
 ### Code Review
 
@@ -41,7 +39,8 @@ Same pattern but for Gemini CLI — long-context synthesis, bilingual drafting, 
 
 ## Workflows To Master
 
-- **AI pair programming**: Claude Code or Cursor for daily work
-- **Multi-agent coding**: agent-task-splitter → codex-delegate (impl) + gemini-delegate (review) → reconciler
-- **Test generation**: write skill that generates pytest tests from a function signature
+- **AI pair programming**: pick one of Claude Code / Cursor / Cline for daily work
+- **Git-native AI editing**: run Aider for a week, get used to the "AI edits → commit → review" rhythm
+- **AI checks in CI**: use Continue to wire AI checks into your PR pipeline
+- **Test generation**: write a skill / prompt that generates pytest tests from a function signature
 - **Code review automation**: GitHub Action calling Claude API on every PR

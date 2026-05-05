@@ -17,25 +17,18 @@
 ### 工作流工具
 
 #### [n8n](https://github.com/n8n-io/n8n) ⭐⭐⭐⭐
-可自架的工作流自動化，內建 AI 整合。視覺化 node-based。
+可自架的工作流自動化平台，內建 AI 整合，採用視覺化節點式編輯器（node-based）。
 
 **適合誰**：要把多個 SaaS 工具串起來時（Slack + Gmail + Notion + AI）。
 
 ---
 
 #### [Make.com](https://www.make.com/)（前身為 Integromat）
-雲端代管的工作流自動化。AI 整合 node 很強。
+雲端代管的工作流自動化平台，AI 整合節點功能完整。
 
 ---
 
 ### 知識工作者 Skills
-
-#### [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills) ⭐⭐⭐⭐
-
-雖然定位給研究者，但有幾個 skill 對知識工作者也適用：
-- `literature-triage-matrix` — 任何文件集合都能用，不只論文
-- `paper-memory-builder` — 從任何文件擷取結構化資料
-- `notebooklm-brief-verifier` — 驗證任何 AI 產生的 brief 是否符合來源
 
 #### [obra/superpowers](https://github.com/obra/superpowers) ⭐⭐⭐⭐
 
@@ -43,10 +36,40 @@
 
 ---
 
+### 知識管理 / 個人 AI
+
+#### [khoj-ai/khoj](https://github.com/khoj-ai/khoj) ⭐⭐⭐⭐
+
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 34k+ |
+| License | AGPL-3.0 |
+
+**教什麼**：自架的「第二大腦」——可以跟 web + 本地文件對話、排程自動化、自訂 agent。
+
+**適合誰**：想自架個人知識庫 + AI assistant 的人。
+
+**備註**：AGPL-3.0 license（傳染性開源）。
+
+---
+
+#### [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) ⭐⭐⭐⭐⭐
+
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 60k+ |
+| License | MIT |
+
+**教什麼**：all-in-one 的私有 RAG 工作平台——上傳文件、建 agent、相容 MCP、預設 on-device。**NotebookLM 的私有 self-hosted 替代方案**。
+
+**適合誰**：知識工作者要私有部署、類 NotebookLM 的工具，避免把資料送到雲端。
+
+---
+
 ### 對知識工作者有用的 MCP Server
 
 #### 通訊類 MCP server ⭐⭐⭐⭐
-Slack / Gmail / Discord 等。原本由 Anthropic host 的 reference server 在 2025 年重整過；社群維護的 server 現在放在 [**punkpeye/awesome-mcp-servers**](https://github.com/punkpeye/awesome-mcp-servers#communication) 跟 [**wong2/awesome-mcp-servers**](https://github.com/wong2/awesome-mcp-servers)。要找最新的 Slack / Gmail / Drive / Calendar MCP server 可以從這兩個清單去翻。
+Slack / Gmail / Discord 等。Anthropic 原本維護的 reference server 已於 2025 年重整；目前由社群維護的 server 集中在 [**punkpeye/awesome-mcp-servers**](https://github.com/punkpeye/awesome-mcp-servers#communication) 跟 [**wong2/awesome-mcp-servers**](https://github.com/wong2/awesome-mcp-servers)，要找最新的 Slack / Gmail / Drive / Calendar MCP server 可以從這兩個清單翻找。
 
 ---
 

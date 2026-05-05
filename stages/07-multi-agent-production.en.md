@@ -31,17 +31,6 @@ The final stage. You're moving from "I can build agents" to "I can run them in p
 
 ### Multi-Agent Orchestration
 
-#### [WenyuChiou/agent-collab-skills](https://github.com/WenyuChiou/agent-collab-skills)
-
-| Recommendation | ⭐⭐⭐⭐ |
-|---|---|
-
-**What it teaches**: 5 skills for multi-agent runs (task splitter, output reconciler, debate, shared memory, acceptance gate). Patterns for Claude Code multi-agent workflows.
-
-**Best for**: Multi-agent in Claude Code context.
-
----
-
 #### [microsoft/autogen](https://github.com/microsoft/autogen)
 
 Already cited in Stage 4. In production context, AutoGen's GroupChat coordination pattern is a strong reference for multi-agent debate / brainstorming.
@@ -64,8 +53,9 @@ Already cited in Stage 4. For production with audit trails, checkpointing, and h
 
 #### [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)
 
-| Stars | ★ 20k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 20k+ |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 
@@ -84,8 +74,9 @@ npx promptfoo eval
 
 #### [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
 
-| Stars | ★ 12k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 12k+ |
 | License | MIT |
 | Recommendation | ⭐⭐⭐⭐ |
 
@@ -97,8 +88,9 @@ npx promptfoo eval
 
 #### [openai/evals](https://github.com/openai/evals)
 
-| Stars | ★ 18k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 18k+ |
 | Recommendation | ⭐⭐⭐⭐ |
 
 **What it teaches**: OpenAI's eval framework. Custom evals for specific use cases.
@@ -111,8 +103,9 @@ npx promptfoo eval
 
 #### [langfuse/langfuse](https://github.com/langfuse/langfuse)
 
-| Stars | ★ 26k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 26k+ |
 | License | MIT (open source) + paid cloud |
 | Recommendation | ⭐⭐⭐⭐⭐ |
 
@@ -132,8 +125,9 @@ npx promptfoo eval
 
 #### [Helicone](https://github.com/Helicone/helicone)
 
-| Stars | ★ 5k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 5k+ |
 | License | Apache 2.0 (open source) + paid cloud |
 | Recommendation | ⭐⭐⭐⭐ |
 
@@ -161,23 +155,53 @@ npx promptfoo eval
 | Recommendation | ⭐⭐⭐⭐⭐ |
 |---|---|
 
-**What it teaches**: Official Python SDK. Streaming, async, tool use, prompt caching, batches, files API.
+**What it teaches**: Official Python SDK (base API layer). Streaming, async, tool use, prompt caching, batches, files API.
 
-**Best for**: Building production apps directly on Claude API.
+**Best for**: Building apps directly on the Claude API when you want raw API control rather than a higher-level agent runtime.
 
 ---
 
 #### [anthropics/anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript)
 
-**What it teaches**: TS equivalent of Python SDK.
+**What it teaches**: TS equivalent of the lower-level Python SDK.
 
-**Best for**: TypeScript / Node / web apps.
+**Best for**: TypeScript / Node / web apps that want the base API layer.
+
+---
+
+#### [anthropics/claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python) ⭐ agent-specific
+
+| Field | Value |
+|---|---|
+| Stars | ★ 6k+ |
+| License | MIT |
+| Recommendation | ⭐⭐⭐⭐⭐ |
+
+**What it teaches**: Anthropic's brand-new (early 2026) **agent-specific SDK** — distinct from the lower-level `anthropic-sdk-python`. Built-in tool use loop, file access, sandboxed execution, subagent orchestration. Effectively exposes the Claude Code agent runtime for Python apps to use directly.
+
+**Best for**: Developers building Claude-based agents rather than just calling the API. Saves you from hand-rolling a ReAct loop, managing tool execution, etc.
+
+**Notes**: Shares the same agent runtime as Claude Code; reading this SDK's source is the fastest path to understanding how Claude Code works internally.
+
+---
+
+#### [anthropics/claude-agent-sdk-typescript](https://github.com/anthropics/claude-agent-sdk-typescript)
+
+| Field | Value |
+|---|---|
+| Stars | ★ 1k+ |
+| License | NOASSERTION |
+| Recommendation | ⭐⭐⭐⭐ |
+
+**What it teaches**: TypeScript version of the Claude Agent SDK.
+
+**Best for**: Developers building Claude agents in Node / web app environments.
 
 ---
 
 #### [Anthropic Cookbook — Advanced patterns](https://github.com/anthropics/anthropic-cookbook)
 
-Already cited. Specifically the `prompt_caching.ipynb`, `tool_use/`, and `multimodal/` notebooks teach production-grade SDK usage.
+Already cited. Specifically the `prompt_caching.ipynb`, `tool_use/`, and `multimodal/` notebooks teach advanced SDK usage.
 
 ---
 
@@ -185,8 +209,9 @@ Already cited. Specifically the `prompt_caching.ipynb`, `tool_use/`, and `multim
 
 #### [BentoML/BentoML](https://github.com/bentoml/BentoML)
 
-| Stars | ★ 8k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 8k+ |
 | License | Apache 2.0 |
 | Recommendation | ⭐⭐⭐⭐ |
 
@@ -208,7 +233,6 @@ Already cited. Specifically the `prompt_caching.ipynb`, `tool_use/`, and `multim
 
 | Field | Value |
 |---|---|
-| Maintainer | datawhalechina |
 | Language | 中文 (zh-CN) |
 | Stars | ★ 30k+ |
 | License | Apache-2.0 |
@@ -222,8 +246,9 @@ Already cited. Specifically the `prompt_caching.ipynb`, `tool_use/`, and `multim
 
 ### [vLLM](https://github.com/vllm-project/vllm)
 
-| Stars | ★ 79k+ |
+| Field | Value |
 |---|---|
+| Stars | ★ 79k+ |
 | License | Apache 2.0 |
 | Recommendation | ⭐⭐⭐⭐ |
 
@@ -233,16 +258,55 @@ Already cited. Specifically the `prompt_caching.ipynb`, `tool_use/`, and `multim
 
 ---
 
-### Production Case Studies
+### Multi-Agent Case Studies
 
-#### [WenyuChiou/WAGF](https://github.com/WenyuChiou/WAGF)
+#### [geekan/MetaGPT](https://github.com/geekan/MetaGPT)
 
-| Recommendation | ⭐⭐⭐⭐ |
+| Field | Value |
 |---|---|
+| Stars | ★ 67k+ |
+| License | MIT |
+| Recommendation | ⭐⭐⭐⭐⭐ |
 
-**What it teaches**: Production-grade governance layer for LLM-driven agent-based models. 6-stage validation pipeline catches hallucination, logical drift, unsafe state mutation. Multi-LLM ablation. 3 reference implementations.
+**What it teaches**: SOP-driven multi-agent software development team — PM / Architect / Engineer roles each producing artifacts (PRD → design → code) and handing off to the next role.
 
-**Best for**: Studying how production LLM-agent systems handle reliability concerns.
+**Best for**: Seeing how the **role-specialization + artifact handoff** pattern is implemented. A different design path from LangGraph's state-machine approach.
+
+**Notes**: Maintained by a Chinese team; the docs site has zh content. Worth comparing against AutoGen's free-form group chat.
+
+---
+
+#### [OpenBMB/ChatDev](https://github.com/OpenBMB/ChatDev)
+
+| Field | Value |
+|---|---|
+| Language | Python |
+| Stars | ★ 33k+ |
+| License | Apache-2.0 |
+| Recommendation | ⭐⭐⭐⭐ |
+
+**What it teaches**: "Communicative" software development pattern — agents debate at each phase (design / code / test) before advancing. The standard open-source case study for the **agent debate / peer-review pattern**, with an academic paper backing it.
+
+**Best for**: Building workflows where "two agents must challenge each other before producing a conclusion." More focused on the debate mechanism than AutoGen.
+
+**Notes**: Has `README-zh.md`, friendly to Chinese readers.
+
+---
+
+#### [princeton-nlp/SWE-agent](https://github.com/princeton-nlp/SWE-agent)
+
+| Field | Value |
+|---|---|
+| Language | Python |
+| Stars | ★ 19k+ |
+| License | MIT |
+| Recommendation | ⭐⭐⭐⭐ |
+
+**What it teaches**: **Agent-Computer Interface (ACI)** design — the *shape* of the tool surface (not the prompt) determines agent performance on SWE-Bench. Princeton NLP's research output.
+
+**Best for**: After learning tool use in Stages 3-4, understand "**why tool design matters more than prompt tuning**."
+
+**Notes**: Paper + open-source code — a great reference for academic multi-agent research.
 
 ---
 
@@ -252,10 +316,10 @@ Can you:
 - [ ] Design a multi-agent system with explicit coordination protocol
 - [ ] Set up automated eval pipeline running in CI
 - [ ] Connect observability (tracing) to a production agent
-- [ ] Use prompt caching to cut costs by 50%+ on a real workload
+- [ ] Measure and compare cost before/after prompt caching on a real workload
 - [ ] Deploy an agent to a cloud service (any provider)
 
-If yes → you've completed the main path. Choose a [specialized branch](../README.md#the-7-stage-learning-map) or contribute to this repo.
+If yes → you've completed the main path. Choose a [specialized branch](../README.en.md#the-7-stage-learning-map) or contribute to this repo.
 
 ## 💡 What's Next
 

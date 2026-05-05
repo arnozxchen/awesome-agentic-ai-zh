@@ -2,7 +2,7 @@
 
 > [English](./05-claude-code-ecosystem.en.md) | **繁體中文**
 
-⏱ **時間估計**：3-4 週（約 15-25 小時）
+⏱ **時間估算**：3-4 週（約 15-25 小時）
 
 ## Stack 一覽
 
@@ -26,7 +26,7 @@
 - **API + SDK**：用程式存取 LLM
 - **Tool Use**：讓 LLM 呼叫你定義的 function
 - **MCP**：標準化協定，讓任何 LLM host 都能使用任何 tool server
-- **Skills**：Claude Code 的行為包，可以包住 MCP tool
+- **Skills**：Claude Code 的行為包，可以封裝 MCP tool
 - **Plugins**：把 Skills、hooks、commands、MCP 設定打包成一個單位發佈
 
 這個階段有 4 個子章節，**請按順序做**——每一節都建立在前一節之上。
@@ -61,7 +61,7 @@
 
 ### 精選 Projects
 - [**anthropics/claude-code**](https://github.com/anthropics/claude-code) — 官方 repo（issues、releases）
-- [**KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh**](https://github.com/KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh) — 簡中走讀
+- [**KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh**](https://github.com/KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh) — 簡中導讀
 - [**hesreallyhim/awesome-claude-code**](https://github.com/hesreallyhim/awesome-claude-code) — 較廣泛的資源清單（目前正在重整）
 
 ---
@@ -77,7 +77,7 @@
 ### 必修閱讀
 1. [**Anthropic — Introducing MCP**](https://www.anthropic.com/news/model-context-protocol) — 最初發表，概念總覽
 2. [**MCP Specification**](https://spec.modelcontextprotocol.io/) — 實際的協定規格
-3. [**Complete Guide to MCP in 2026**](https://dev.to/x4nent/complete-guide-to-mcp-model-context-protocol-in-2026-architecture-implementation-and-4a11) — 實作走讀
+3. [**Complete Guide to MCP in 2026**](https://dev.to/x4nent/complete-guide-to-mcp-model-context-protocol-in-2026-architecture-implementation-and-4a11) — 實作導讀
 
 ### Hello-X
 - **Hello MCP client** — 安裝 `modelcontextprotocol/servers/filesystem`，從 Claude Desktop 連上去。看著 Claude 讀你的檔案。
@@ -90,7 +90,6 @@
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | Anthropic（官方） |
 | 語言 | TypeScript / Python |
 | Stars | ★ 85k+ |
 | License | MIT |
@@ -113,7 +112,6 @@ pip install mcp-server-fetch
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | Anthropic（官方） |
 | 語言 | Python |
 | License | MIT |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
@@ -132,7 +130,6 @@ pip install mcp
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | Anthropic（官方） |
 | 語言 | TypeScript |
 | License | MIT |
 | 推薦度 | ⭐⭐⭐⭐ |
@@ -145,8 +142,7 @@ pip install mcp
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | wong2 |
-| 格式 | 精選清單 |
+| 形式 | 精選清單 |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
 
 **教什麼**：150+ 個社群 MCP server 的目錄，按類別分類——search、code、cloud、communication、finance。
@@ -159,7 +155,7 @@ pip install mcp
 
 #### [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)
 
-| Maintainer | punkpeye |
+| 欄位 | 內容 |
 |---|---|
 | 推薦度 | ⭐⭐⭐⭐ |
 
@@ -173,7 +169,6 @@ pip install mcp
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | GitHub |
 | 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：真正在 production 跑的 MCP server 長什麼樣子。GitHub 官方維護。
@@ -184,8 +179,9 @@ pip install mcp
 
 #### [21st-dev/magic-mcp](https://github.com/21st-dev/magic-mcp)
 
-| 推薦度 | ⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：一個非平凡的 MCP server，會生成 UI 元件。讓你看到 MCP 不只能做資料抓取。
 
@@ -212,68 +208,39 @@ pip install mcp
 
 ### 精選 Projects
 
-#### [anthropics/claude-code（官方 skills 範例）](https://github.com/anthropics/claude-code)
+#### [anthropics/skills](https://github.com/anthropics/skills) ⭐ 官方 spec
 
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 128k+ |
+| License | NOASSERTION |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
-|---|---|
 
-**教什麼**：Anthropic 維護的官方 skill 範例。SKILL.md 結構的參考。
+**教什麼**：Anthropic 官方的 Skills repo——`spec/`（SKILL.md frontmatter 標準）+ `template/`（起手範本）+ `skills/`（pdf、docx、xlsx、pptx、skill-creator 等 reference 實作）。
 
----
+**適合誰**：寫自己的 SKILL.md 之前先讀這個——SKILL.md 結構與 frontmatter 的重要參考實作。
 
-#### [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills)
-
-| 欄位 | 內容 |
-|---|---|
-| Maintainer | Wenyu Chiou |
-| Stars | ★ 41+ |
-| License | MIT |
-| 推薦度 | ⭐⭐⭐⭐ |
-
-**教什麼**：5-plugin marketplace、14 個研究 skills，涵蓋文獻分流、論文 memory 建構、NotebookLM 驗證、Zotero 整理。**multi-plugin marketplace 的範例。**
-
-**適合誰**：研究一個 marketplace 怎麼把多個來自不同來源 repo 的 plugin 編在一起。
-
-**怎麼跑**：
-```bash
-claude plugin marketplace add WenyuChiou/ai-research-skills
-claude plugin install research-workspace@ai-research-skills
-```
+**備註**：跟 `anthropics/claude-code` 不一樣——這個是專門的 Skills repo，後者是 Claude Code 的主 repo。Agent Skills 的更廣義標準另見 [agentskills.io](https://agentskills.io)。
 
 ---
 
-#### [WenyuChiou/agent-collab-skills](https://github.com/WenyuChiou/agent-collab-skills)
+#### [anthropics/claude-code](https://github.com/anthropics/claude-code)
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | Wenyu Chiou |
-| License | MIT |
 | 推薦度 | ⭐⭐⭐⭐ |
 
-**教什麼**：5 個用來做 multi-agent orchestration 的 skill（task splitter、output reconciler、debate、shared memory、acceptance gate）。**single-plugin bundle 的範例。**
+**教什麼**：Claude Code 主 repo，內含 issues、releases 與一些 inline skill 範例。
 
-**適合誰**：研究 single-plugin marketplace 怎麼把相關的 skill 包在一起。
-
----
-
-#### [WenyuChiou/codex-delegate](https://github.com/WenyuChiou/codex-delegate)
-
-| 欄位 | 內容 |
-|---|---|
-| Stars | ★ 57+ |
-| License | MIT |
-| 推薦度 | ⭐⭐⭐⭐ |
-
-**教什麼**：單一 skill 的 repo，從 Claude Code 委派工作給 Codex CLI。wrapper script + result.json contract 的範例。
-
-**適合誰**：single-skill plugin 的範例 + 子 CLI 委派的範例。
+**適合誰**：追蹤新版功能、回報 bug、看 release notes。
 
 ---
 
 #### [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)
 
-| 推薦度 | ⭐⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：社群 Claude Skills 的精選目錄。
 
@@ -283,8 +250,9 @@ claude plugin install research-workspace@ai-research-skills
 
 #### [obra/superpowers](https://github.com/obra/superpowers)
 
-| 推薦度 | ⭐⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：20+ 個經過實戰檢驗的 skill（TDD、debugging、合作模式），附 `/brainstorm`、`/write-plan`、`/execute-plan` 命令以及 skills-search tool。
 
@@ -294,8 +262,9 @@ claude plugin install research-workspace@ai-research-skills
 
 #### [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)
 
-| 推薦度 | ⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：1000+ 個 agent skill，相容於 Claude Code、Codex、Gemini CLI、Cursor。跨工具的視角。
 
@@ -305,12 +274,41 @@ claude plugin install research-workspace@ai-research-skills
 
 #### [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)
 
-| 推薦度 | ⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：232+ 個 Claude Code skill，跨 engineering、marketing、product、compliance。
 
 **適合誰**：找特定領域的 skill 範例。
+
+---
+
+#### [mattpocock/skills](https://github.com/mattpocock/skills)
+
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 59k+ |
+| License | MIT |
+| 推薦度 | ⭐⭐⭐⭐ |
+
+**教什麼**：Matt Pocock（TypeScript 社群知名教學者）公開自己工作中真實在用的 `.claude/` 目錄。每個 SKILL.md 都很短（10-50 行），不過度工程化。
+
+**適合誰**：想看「真實工程師日常用的 SKILL.md 長什麼樣子」的人。對照那種 200 行 over-engineered 的 skill，這份是反例的好例子。
+
+---
+
+#### [wshobson/agents](https://github.com/wshobson/agents)
+
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 35k+ |
+| License | MIT |
+| 推薦度 | ⭐⭐⭐⭐ |
+
+**教什麼**：把 skills + subagents 組合起來做 multi-agent 編排。**從單一 SKILL.md 進化到 agent-as-skill 組合 pattern** 的範例。
+
+**適合誰**：跑過幾個 SKILL.md 之後，想知道「skill 之間怎麼互相呼叫、怎麼變成更大的 agent workflow」的中階學習者。
 
 ---
 
@@ -334,28 +332,57 @@ claude plugin install research-workspace@ai-research-skills
 
 ### 精選 Projects
 
-#### [WenyuChiou/ai-research-skills](https://github.com/WenyuChiou/ai-research-skills)（multi-plugin marketplace 範例）
+#### [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) ⭐ 官方
 
-5.3 已經提過。讀它的 `.claude-plugin/marketplace.json` 來研究 multi-plugin 寫法（5 個 plugin、5 個來源 repo）。
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 18k+ |
+| License | NOASSERTION（每個 plugin 獨立 license，請看各自目錄） |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
+
+**教什麼**：Anthropic 官方的 marketplace 範本——`.claude-plugin/marketplace.json` 標準 schema、`plugins/` 內含 plugin 本體、`external_plugins/` 引用外部 repo 的 plugin。
+
+**適合誰**：「**marketplace.json 該長什麼樣**」這個問題的權威解答。寫自己的 marketplace 之前必看。
+
+**備註**：除了 schema 之外，也是觀察 Anthropic 怎麼分類官方 plugin（chrome-devtools、deepwiki、code-research、jam 等）的好參考。
 
 ---
 
-#### [WenyuChiou/agent-collab-skills](https://github.com/WenyuChiou/agent-collab-skills)（single-plugin bundle 範例）
+#### [obra/superpowers-marketplace](https://github.com/obra/superpowers-marketplace)
 
-讀它的 `.claude-plugin/marketplace.json` 跟 `.claude-plugin/plugin.json` 研究 single-plugin bundle 的寫法。
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 900+ |
+| License | MIT |
+| 推薦度 | ⭐⭐⭐⭐ |
+
+**教什麼**：**最簡 marketplace template**——repo 裡只有 `.claude-plugin/marketplace.json` + README，plugin 本體放在外部 repo。展示「**curator-only marketplace**」（策展者只負責挑選、不打包原始碼）的最小形式。
+
+**適合誰**：要做「我策展、別人寫」型 marketplace 的人。比 anthropics/claude-plugins-official 更精簡，是最小可行範本。
 
 ---
 
-#### [obra/superpowers](https://github.com/obra/superpowers)（production marketplace）
+#### [trailofbits/skills-curated](https://github.com/trailofbits/skills-curated)
 
-規模較大、實戰過的 marketplace。讀它的打包結構。
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 388 |
+| License | CC-BY-SA-4.0 |
+| 推薦度 | ⭐⭐⭐ |
+
+**教什麼**：知名資安公司 Trail of Bits 維護的 curated marketplace，重點在 **supply-chain security**——每個 skill 都經過審查，README 寫清楚審核標準。
+
+**適合誰**：在意供應鏈信任、想學「**curator-vouches-for-safety**」這種模式的 reviewer 跟團隊。
+
+**備註**：規模小但意義大——示範 marketplace 不只是 skill 的清單，也可以是信任機制。
 
 ---
 
 #### [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit)
 
-| 推薦度 | ⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：社群中規模最大的 Claude Code agents、skills、hooks、templates 目錄之一。涵蓋的 use case 很廣。
 
@@ -377,6 +404,6 @@ claude plugin install research-workspace@ai-research-skills
 
 ## 💡 Bonus：完成這個階段之後
 
-- 對 `anthropics/claude-code` cookbook 發一個 PR（小修正、文件更新）
+- 對 [`anthropics/claude-cookbooks`](https://github.com/anthropics/claude-cookbooks) 發一個 PR（小修正、文件更新）
 - 把自己的 plugin 投稿到社群 marketplace
 - 寫一篇文章，比較自己的 hello-MCP server 跟官方 `modelcontextprotocol/servers` 收的某一個

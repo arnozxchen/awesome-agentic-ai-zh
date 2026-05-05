@@ -2,7 +2,7 @@
 
 > [English](./04-agent-frameworks.en.md) | **繁體中文**
 
-⏱ **時間估計**：2-3 週（約 10-15 小時）
+⏱ **時間估算**：2-3 週（約 10-15 小時）
 
 你已經從零打造過一個 ReAct agent（Stage 3）。現在來看 framework 到底幫你做了什麼。**挑一個深入學**，其他的瀏覽過去就好，知道什麼時候該換。
 
@@ -50,11 +50,10 @@
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | LangChain Inc. |
 | 語言 | Python / TypeScript |
 | Stars | ★ 31k+ |
 | License | MIT |
-| 推薦 | ⭐⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
 
 **教什麼**：基於圖的 agent orchestration。狀態管理、checkpointing、human-in-the-loop、time-travel debugging。
 
@@ -74,11 +73,10 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | CrewAI Inc. |
 | 語言 | Python |
 | Stars | ★ 50k+ |
 | License | MIT |
-| 推薦 | ⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：以角色為核心的多 agent 設計。一群（Crew）有不同角色的 agent 朝同一個目標合作。
 
@@ -92,17 +90,16 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Microsoft Research |
 | 語言 | Python |
 | Stars | ★ 57k+ |
 | License | CC-BY-4.0（注意：這是文件 license，程式碼另外釋出） |
-| 推薦 | ⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：對話式多 agent 團隊。agent 透過多輪對話互動。group-chat 協調 pattern 是它的強項。
 
 **適合誰**：多 agent 辯論、腦力激盪、peer review 類的 pattern。Microsoft 研究院血統。
 
-**備註**：AG2（v0.4 重寫版）改成 async-first 執行、event-driven 核心。多數既有教程仍在用原本的 AutoGen（v0.2），請留意版本分支。
+**備註**：AG2（v0.4 重寫版）改成 async-first 執行、event-driven 核心。多數既有教學仍在用原本的 AutoGen（v0.2），請留意版本分支。
 
 ---
 
@@ -110,11 +107,10 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Hugging Face |
 | 語言 | Python |
 | Stars | ★ 27k+ |
 | License | Apache 2.0 |
-| 推薦 | ⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：寫程式碼的 agent（CodeAct pattern）— agent 產生 Python 程式碼，而不是 JSON tool call。≤1000 LOC 的設計哲學。
 
@@ -128,16 +124,15 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | OpenAI |
 | 語言 | Python |
 | License | MIT |
-| 推薦 | ⭐⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：OpenAI 官方的 agent SDK。agent 之間 hand-off、結構化輸出、OpenAI 原生的開發體驗。
 
 **適合誰**：你已經押注 OpenAI 生態。輕量、跟 GPT-4 系列整合很緊。
 
-**備註**：較新的選手（2025 年下半年才推出）。實戰歷練不如 LangGraph，但 API 很乾淨。值得持續觀察它成熟。
+**備註**：較新的選手（2025 年下半年才推出）。實戰歷練不如 LangGraph，但 API 很乾淨，值得持續關注它的後續發展。
 
 ---
 
@@ -145,11 +140,10 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | LlamaIndex |
 | 語言 | Python |
 | Stars | ★ 49k+ |
 | License | MIT |
-| 推薦 | ⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：跟 RAG 緊密整合的 agent。如果你的 agent 需要大量文件/資料 retrieval，LlamaIndex 是自然選擇。
 
@@ -163,10 +157,9 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | Pydantic 團隊 |
 | 語言 | Python |
 | License | MIT |
-| 推薦 | ⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：型別安全的 agent framework，用 Pydantic 處理結構化輸出。驗證保證很強。
 
@@ -180,10 +173,9 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | agentscope（阿里出身） |
 | 語言 | Python |
 | License | Apache 2.0 |
-| 推薦 | ⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：多 agent 平台，視覺化工具是強項。「打造你看得到、看得懂、信得過的 agent」。
 
@@ -197,11 +189,10 @@ pip install langgraph langchain-anthropic
 
 | 欄位 | 內容 |
 |---|---|
-| 維護者 | LangChain Inc. |
 | 語言 | Python / TypeScript |
 | Stars | ★ 135k+ |
 | License | MIT |
-| 推薦 | ⭐⭐⭐ |
+| 推薦度 | ⭐⭐⭐ |
 
 **教什麼**：最早的「萬用工具袋」framework。chains、agents、memory、retrievers 全部一鍋。
 

@@ -20,11 +20,44 @@
 
 ### 可用的基礎元件
 
-#### [obra/superpowers](https://github.com/obra/superpowers) ⭐⭐⭐
+#### [obra/superpowers](https://github.com/obra/superpowers) ⭐⭐⭐⭐
 通用的寫作 / 腦力激盪 skill。可改用在備課上。
 
 #### [Claude Code](https://github.com/anthropics/claude-code)（搭配自訂 CLAUDE.md）⭐⭐⭐⭐⭐
 教師最好的入口。低門檻先用 Claude.ai（網頁版）開始；如果是會重複的流程，再升級到 Claude Code。
+
+### 教學課程素材（給教師備課用）
+
+#### [huggingface/agents-course](https://github.com/huggingface/agents-course) ⭐⭐⭐⭐
+
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 28k+ |
+| License | Apache-2.0 |
+
+**教什麼**：Hugging Face 官方的 agent 課程——notebook、練習、結業認證。是一份**現成的「AI agent 教學」素材**。
+
+**適合誰**：要在學校 / 工作坊開「AI agent 入門」課程的老師，可以直接拿來當教材或改編。
+
+**備註**：注意這是「教 AI agent 怎麼建」的教材，不是「老師用 AI 教書」的工具。
+
+---
+
+#### [datawhalechina/llm-universe](https://github.com/datawhalechina/llm-universe) ⭐⭐⭐⭐（中文）
+
+| 欄位 | 內容 |
+|---|---|
+| 語言 | 中文（zh-CN） |
+| Stars | ★ 13k+ |
+| License | NOASSERTION |
+
+**教什麼**：Datawhale 出品的中文 LLM 應用開發課程——含 RAG、agent、章節練習。中文教師備課的現成模板。
+
+**適合誰**：中文教師要找現成可改的 LLM 教材底稿、再針對自己學生程度調整。
+
+**備註**：跟 hf agents-course 一樣，是「教學生建 LLM 應用」的教材，不是「教師端的 AI 助教」。
+
+---
 
 ### 閱讀材料
 

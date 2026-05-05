@@ -18,11 +18,44 @@
 
 ### Useful Building Blocks
 
-#### [obra/superpowers](https://github.com/obra/superpowers) ⭐⭐⭐
+#### [obra/superpowers](https://github.com/obra/superpowers) ⭐⭐⭐⭐
 General writing / brainstorming skills. Adaptable for lesson prep.
 
 #### [Claude Code](https://github.com/anthropics/claude-code) (with custom CLAUDE.md) ⭐⭐⭐⭐⭐
 Best entry point for teachers. Use Claude.ai (web) for low-barrier start; upgrade to Claude Code for repeated workflows.
+
+### Teaching Course Materials (for teachers preparing classes)
+
+#### [huggingface/agents-course](https://github.com/huggingface/agents-course) ⭐⭐⭐⭐
+
+| Field | Value |
+|---|---|
+| Stars | ★ 28k+ |
+| License | Apache-2.0 |
+
+**What it teaches**: Hugging Face's official agents curriculum — notebooks, exercises, certifications. A ready-made **AI agent teaching artifact**.
+
+**Best for**: Teachers running an "AI agents intro" workshop or class who want existing materials to teach from or adapt.
+
+**Notes**: This teaches *how to build agents* — it's not an "AI tutor for students" tool.
+
+---
+
+#### [datawhalechina/llm-universe](https://github.com/datawhalechina/llm-universe) ⭐⭐⭐⭐ (Chinese)
+
+| Field | Value |
+|---|---|
+| Language | Chinese (zh-CN) |
+| Stars | ★ 13k+ |
+| License | NOASSERTION |
+
+**What it teaches**: Datawhale's Chinese-language LLM application development course — RAG, agents, chapter exercises. A ready-made template for Chinese-speaking teachers preparing class material.
+
+**Best for**: Chinese-language teachers wanting a ready LLM curriculum to adapt to their students' level.
+
+**Notes**: Same caveat as `huggingface/agents-course` — it's "teach students to build LLM apps," not "AI assistant for the teacher."
+
+---
 
 ### Reading Material
 

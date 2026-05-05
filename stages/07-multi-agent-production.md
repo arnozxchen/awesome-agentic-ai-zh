@@ -2,7 +2,7 @@
 
 > [English](./07-multi-agent-production.en.md) | **繁體中文**
 
-⏱ **時間估計**：2-4 週（約 15-30 小時）
+⏱ **時間估算**：2-4 週（約 15-30 小時）
 
 最後一個階段。你正從「我會做 agent」走向「我能在 production 跑起來，多個 agent 協作、有 eval、有 observability、會 deploy」。
 
@@ -33,17 +33,6 @@
 
 ### Multi-Agent Orchestration
 
-#### [WenyuChiou/agent-collab-skills](https://github.com/WenyuChiou/agent-collab-skills)
-
-| 推薦度 | ⭐⭐⭐⭐ |
-|---|---|
-
-**教什麼**：5 個用在 multi-agent run 的 skill（task splitter、output reconciler、debate、shared memory、acceptance gate）。Claude Code multi-agent workflow 的範例。
-
-**適合誰**：在 Claude Code 環境裡做 multi-agent。
-
----
-
 #### [microsoft/autogen](https://github.com/microsoft/autogen)
 
 Stage 4 已提過。在 production 場景下，AutoGen 的 GroupChat 協作模式是 multi-agent 辯論 / brainstorming 的好參考。
@@ -66,8 +55,9 @@ Stage 4 已提過。要 production 加上 audit trail、checkpoint、human-in-th
 
 #### [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)
 
-| Stars | ★ 20k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 20k+ |
 | License | MIT |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
 
@@ -86,8 +76,9 @@ npx promptfoo eval
 
 #### [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness)
 
-| Stars | ★ 12k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 12k+ |
 | License | MIT |
 | 推薦度 | ⭐⭐⭐⭐ |
 
@@ -99,8 +90,9 @@ npx promptfoo eval
 
 #### [openai/evals](https://github.com/openai/evals)
 
-| Stars | ★ 18k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 18k+ |
 | 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：OpenAI 的 eval framework。可以針對特定 use case 寫客製 eval。
@@ -113,8 +105,9 @@ npx promptfoo eval
 
 #### [langfuse/langfuse](https://github.com/langfuse/langfuse)
 
-| Stars | ★ 26k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 26k+ |
 | License | MIT（開源）+ 付費雲端 |
 | 推薦度 | ⭐⭐⭐⭐⭐ |
 
@@ -134,8 +127,9 @@ npx promptfoo eval
 
 #### [Helicone](https://github.com/Helicone/helicone)
 
-| Stars | ★ 5k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 5k+ |
 | License | Apache 2.0（開源）+ 付費雲端 |
 | 推薦度 | ⭐⭐⭐⭐ |
 
@@ -147,8 +141,9 @@ npx promptfoo eval
 
 #### [weave（Weights & Biases 出品）](https://github.com/wandb/weave)
 
-| 推薦度 | ⭐⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐⭐ |
 
 **教什麼**：W&B 出的 tracing + eval framework。跟他們的 ML 平台整合。
 
@@ -160,12 +155,13 @@ npx promptfoo eval
 
 #### [anthropics/anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python)
 
-| 推薦度 | ⭐⭐⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| 推薦度 | ⭐⭐⭐⭐⭐ |
 
-**教什麼**：官方 Python SDK。streaming、async、tool use、prompt caching、batches、files API。
+**教什麼**：官方 Python SDK（基礎 API 層）。streaming、async、tool use、prompt caching、batches、files API。
 
-**適合誰**：直接基於 Claude API 做 production 應用。
+**適合誰**：直接基於 Claude API 做應用。
 
 ---
 
@@ -177,9 +173,39 @@ npx promptfoo eval
 
 ---
 
+#### [anthropics/claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python) ⭐ agent 專用
+
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 6k+ |
+| License | MIT |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
+
+**教什麼**：Anthropic 全新（2026 年初推出）的 **agent 專用 SDK**，跟基礎 `anthropic-sdk-python` 不同——這個內建 tool use loop、file access、sandbox 執行、subagent 編排。等於把 Claude Code 的 agent runtime 開放給 Python 應用直接用。
+
+**適合誰**：要打造 Claude-based agent 而不是只呼叫 API 的開發者。比起手刻 ReAct loop、自己管 tool execution，這個 SDK 把這些抽象都做好了。
+
+**備註**：跟 Claude Code 共用同一套 agent runtime；想理解 Claude Code 內部怎麼運作的，讀這個 SDK 的原始碼是最快的路徑。
+
+---
+
+#### [anthropics/claude-agent-sdk-typescript](https://github.com/anthropics/claude-agent-sdk-typescript)
+
+| 欄位 | 內容 |
+|---|---|
+| Stars | ★ 1k+ |
+| License | NOASSERTION |
+| 推薦度 | ⭐⭐⭐⭐ |
+
+**教什麼**：Claude Agent SDK 的 TypeScript 版。
+
+**適合誰**：要在 Node / web app 環境打造 Claude agent 的開發者。
+
+---
+
 #### [Anthropic Cookbook — Advanced patterns](https://github.com/anthropics/anthropic-cookbook)
 
-之前已提過。特別是 `prompt_caching.ipynb`、`tool_use/`、`multimodal/` 三個 notebook,教 production 等級的 SDK 用法。
+之前已提過。特別是 `prompt_caching.ipynb`、`tool_use/`、`multimodal/` 三個 notebook，教進階 SDK 用法。
 
 ---
 
@@ -187,8 +213,9 @@ npx promptfoo eval
 
 #### [BentoML/BentoML](https://github.com/bentoml/BentoML)
 
-| Stars | ★ 8k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 8k+ |
 | License | Apache 2.0 |
 | 推薦度 | ⭐⭐⭐⭐ |
 
@@ -210,7 +237,6 @@ npx promptfoo eval
 
 | 欄位 | 內容 |
 |---|---|
-| Maintainer | datawhalechina |
 | 語言 | 中文（zh-CN） |
 | Stars | ★ 30k+ |
 | License | Apache-2.0 |
@@ -224,8 +250,9 @@ npx promptfoo eval
 
 ### [vLLM](https://github.com/vllm-project/vllm)
 
-| Stars | ★ 79k+ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 79k+ |
 | License | Apache 2.0 |
 | 推薦度 | ⭐⭐⭐⭐ |
 
@@ -235,16 +262,55 @@ npx promptfoo eval
 
 ---
 
-### Production 案例研究
+### Multi-Agent 案例研究
 
-#### [WenyuChiou/WAGF](https://github.com/WenyuChiou/WAGF)
+#### [geekan/MetaGPT](https://github.com/geekan/MetaGPT)
 
-| 推薦度 | ⭐⭐⭐⭐ |
+| 欄位 | 內容 |
 |---|---|
+| Stars | ★ 67k+ |
+| License | MIT |
+| 推薦度 | ⭐⭐⭐⭐⭐ |
 
-**教什麼**：給 LLM 驅動的 agent-based model 用的 production 等級 governance 層。6 階段驗證流水線抓 hallucination、邏輯漂移、不安全的狀態變更。跨模型 ablation。3 個參考實作。
+**教什麼**：以 SOP（Standard Operating Procedure）為核心的多 agent 軟體開發 team——PM / Architect / Engineer 各自有角色，從 PRD → 設計 → 程式碼一路產出 artifact 交接給下一棒。
 
-**適合誰**：研究 production LLM-agent 系統怎麼處理可靠度問題。
+**適合誰**：想看「**角色分工 + artifact 交接**」這種 pattern 怎麼實作的人。跟 LangGraph 的 state machine 路線不同，是另一條 multi-agent 設計思路。
+
+**備註**：中文團隊維護，docs site 有 zh 內容。值得拿來跟 AutoGen 的 free-form group chat 對比。
+
+---
+
+#### [OpenBMB/ChatDev](https://github.com/OpenBMB/ChatDev)
+
+| 欄位 | 內容 |
+|---|---|
+| 語言 | Python |
+| Stars | ★ 33k+ |
+| License | Apache-2.0 |
+| 推薦度 | ⭐⭐⭐⭐ |
+
+**教什麼**：「對話式」軟體開發 pattern——agents 在 design / code / test 各階段互相辯論才推進。這是 **agent debate / peer-review pattern** 最標準的開源案例，背後有論文。
+
+**適合誰**：要打造「兩個 agent 互相挑戰才產出結論」這種 workflow 的人。比 AutoGen 更聚焦在 debate 機制。
+
+**備註**：有 `README-zh.md`，中文讀者友善。
+
+---
+
+#### [princeton-nlp/SWE-agent](https://github.com/princeton-nlp/SWE-agent)
+
+| 欄位 | 內容 |
+|---|---|
+| 語言 | Python |
+| Stars | ★ 19k+ |
+| License | MIT |
+| 推薦度 | ⭐⭐⭐⭐ |
+
+**教什麼**：**Agent-Computer Interface (ACI)** 的設計思路——tool 介面的形狀（不是 prompt）決定 agent 在 SWE-Bench 上的成績。Princeton NLP 的論文成果。
+
+**適合誰**：在 Stage 3-4 學完 tool use 之後，想理解「**為什麼 tool 設計比 prompt tuning 重要**」的人。
+
+**備註**：論文 + 實作開源，是學術 multi-agent 研究的好參考。
 
 ---
 
@@ -254,10 +320,10 @@ npx promptfoo eval
 - [ ] 設計一個 multi-agent 系統，協作協定講得清楚
 - [ ] 在 CI 跑自動 eval pipeline
 - [ ] 把 observability（tracing）接到 production agent
-- [ ] 用 prompt caching 在實際工作量上把成本降 50% 以上
+- [ ] 在真實 workload 上量測 prompt caching 前後的成本差異
 - [ ] 把 agent deploy 到雲端（任何 provider）
 
-如果都可以 → 你已經跑完主路線。挑一個[特化分支](../README.md#the-7-stage-learning-map)，或回過頭來貢獻這份 repo。
+如果都可以 → 你已經跑完主路線。挑一個[特化分支](../README.md#️-7-階段學習地圖)，或回過頭來貢獻這份 repo。
 
 ## 💡 接下來
 
