@@ -21,6 +21,8 @@
 ## 1. 寫你的第一個 Skill
 
 > Skill = 一個資料夾含 `SKILL.md`，Claude Code 啟動時自動 discover、按情境自動載入。最小 viable 版本 50 行就能跑。
+>
+> 📚 **這份是「30 分鐘跑出第一個」實作版。想看「Skill 怎麼寫得好」深度討論** → [Hello-Agents Extra08：如何寫出好的 Skill](https://github.com/datawhalechina/hello-agents/blob/main/Extra-Chapter/Extra08-如何寫出好的Skill.md)（中文最完整的 Skill 最佳實踐，討論 description 寫法、references / scripts 設計等）。兩份互補：先用本 recipe 跑出第一個，再讀那份 polish 寫法。
 
 ### 為什麼
 
