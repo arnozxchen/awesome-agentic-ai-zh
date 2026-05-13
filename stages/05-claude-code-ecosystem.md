@@ -259,23 +259,23 @@ Plugin
 
 > 不知道從哪裡開始裝 plugin？下面是 2025 後段 Anthropic 官方 + 社群高評價選擇。**安裝指令統一格式**：`/plugin install <plugin-name>@<marketplace-name>`（譬如 `/plugin install code-review@claude-plugins-official`）。
 
-| 用途分類 | Plugin | Marketplace | 為什麼推薦 |
+| 用途分類 | Plugin（含直接連結） | Marketplace | 為什麼推薦 |
 |---|---|---|---|
-| **開發 workflow**<br>（多數開發者必裝） | `code-review` | claude-plugins-official | 官方 code review skill 集合、staged diff review + security check |
-| | `pr-review-toolkit` | claude-plugins-official | PR review 完整流程（comment、suggest、approve）|
-| | `commit-commands` | claude-plugins-official | git commit message 規範 + branching workflow |
-| | `feature-dev` | claude-plugins-official | 完整 feature 開發 cycle（spec → plan → implement → test） |
-| | `frontend-design` | claude-plugins-official | UI 設計 + responsive layout 輔助 |
-| **語言工具**<br>（依用的語言挑）| `typescript-lsp` / `pyright-lsp` / `rust-analyzer-lsp` / `gopls-lsp` 等 | claude-plugins-official | 各語言 LSP 整合、35 個語言 plugin 都在這 |
-| **plugin / skill 自建** | `skill-creator` | claude-plugins-official | 寫自己的 skill 時自動產生 frontmatter + 結構 |
-| | `plugin-dev` | claude-plugins-official | 寫自己的 plugin 時自動產生 `.claude-plugin/` 結構 |
-| | `mcp-server-dev` | claude-plugins-official | 寫自己的 MCP server 時的腳手架 |
-| | `hookify` | claude-plugins-official | 寫 hooks 規則的工具 |
-| **領域特化 — 工程團隊** | **`engineering` bundle** | knowledge-work-plugins | **10 個 skill**：architecture / code-review / debug / deploy-checklist / documentation / incident-response / standup / system-design / tech-debt / testing-strategy |
-| **領域特化 — 財務團隊** | **`finance` bundle** | knowledge-work-plugins | **8 個 skill**：audit-support / close-management / financial-statements / journal-entry-prep / reconciliation / sox-testing / variance-analysis |
-| **領域特化 — 其他**<br>（同 marketplace）| `sales` / `marketing` / `legal` / `human-resources` / `customer-support` / `data` / `design` / `operations` / `product-management` / `productivity` / `bio-research` 等 | knowledge-work-plugins | knowledge-work-plugins **18 個 vertical bundle**——挑跟你工作領域對應的那個 |
-| **外部整合**<br>（第三方服務） | `asana` / `github` / `gitlab` / `linear` / `firebase` / `playwright` / `terraform` / `discord` / `imessage` / `telegram` 等 | claude-plugins-official (external) | 整合常用 SaaS / 開發工具 |
-| **community 廣度** | （挑感興趣的 skill） | rohitg00/awesome-claude-code-toolkit | 社群最大 agents / skills / hooks / templates 目錄 |
+| **開發 workflow**<br>（多數開發者必裝） | [`code-review`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-review) | claude-plugins-official | 官方 code review skill 集合、staged diff review + security check |
+| | [`pr-review-toolkit`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/pr-review-toolkit) | claude-plugins-official | PR review 完整流程（comment、suggest、approve）|
+| | [`commit-commands`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/commit-commands) | claude-plugins-official | git commit message 規範 + branching workflow |
+| | [`feature-dev`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/feature-dev) | claude-plugins-official | 完整 feature 開發 cycle（spec → plan → implement → test） |
+| | [`frontend-design`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design) | claude-plugins-official | UI 設計 + responsive layout 輔助 |
+| **語言工具**<br>（依用的語言挑）| [`typescript-lsp`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/typescript-lsp) / [`pyright-lsp`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/pyright-lsp) / [`rust-analyzer-lsp`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/rust-analyzer-lsp) / [`gopls-lsp`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/gopls-lsp) 等 | claude-plugins-official | 各語言 LSP 整合、[35 個語言 plugin](https://github.com/anthropics/claude-plugins-official/tree/main/plugins) 都在這 |
+| **plugin / skill 自建** | [`skill-creator`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator) | claude-plugins-official | 寫自己的 skill 時自動產生 frontmatter + 結構 |
+| | [`plugin-dev`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/plugin-dev) | claude-plugins-official | 寫自己的 plugin 時自動產生 `.claude-plugin/` 結構 |
+| | [`mcp-server-dev`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev) | claude-plugins-official | 寫自己的 MCP server 時的腳手架 |
+| | [`hookify`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/hookify) | claude-plugins-official | 寫 hooks 規則的工具 |
+| **領域特化 — 工程團隊** | [**`engineering` bundle**](https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering) | knowledge-work-plugins | **10 個 skill**：architecture / code-review / debug / deploy-checklist / documentation / incident-response / standup / system-design / tech-debt / testing-strategy |
+| **領域特化 — 財務團隊** | [**`finance` bundle**](https://github.com/anthropics/knowledge-work-plugins/tree/main/finance) | knowledge-work-plugins | **8 個 skill**：audit-support / close-management / financial-statements / journal-entry-prep / reconciliation / sox-testing / variance-analysis |
+| **領域特化 — 其他**<br>（同 marketplace）| [`sales`](https://github.com/anthropics/knowledge-work-plugins/tree/main/sales) / [`marketing`](https://github.com/anthropics/knowledge-work-plugins/tree/main/marketing) / [`legal`](https://github.com/anthropics/knowledge-work-plugins/tree/main/legal) / [`human-resources`](https://github.com/anthropics/knowledge-work-plugins/tree/main/human-resources) / [`customer-support`](https://github.com/anthropics/knowledge-work-plugins/tree/main/customer-support) / [`data`](https://github.com/anthropics/knowledge-work-plugins/tree/main/data) / [`design`](https://github.com/anthropics/knowledge-work-plugins/tree/main/design) / [`operations`](https://github.com/anthropics/knowledge-work-plugins/tree/main/operations) / [`product-management`](https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management) / [`productivity`](https://github.com/anthropics/knowledge-work-plugins/tree/main/productivity) / [`bio-research`](https://github.com/anthropics/knowledge-work-plugins/tree/main/bio-research) 等 | knowledge-work-plugins | knowledge-work-plugins **[18 個 vertical bundle](https://github.com/anthropics/knowledge-work-plugins)**——挑跟你工作領域對應的那個 |
+| **外部整合**<br>（第三方服務） | [`asana`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/asana) / [`github`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/github) / [`gitlab`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/gitlab) / [`linear`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/linear) / [`firebase`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/firebase) / [`playwright`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/playwright) / [`terraform`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/terraform) / [`discord`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/discord) / [`imessage`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/imessage) / [`telegram`](https://github.com/anthropics/claude-plugins-official/tree/main/external_plugins/telegram) 等 | claude-plugins-official (external) | 整合常用 SaaS / 開發工具 |
+| **community 廣度** | （挑感興趣的 skill） | [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit) | 社群最大 agents / skills / hooks / templates 目錄 |
 
 **建議入手順序**：
 1. 開發者必裝（5 個）：`code-review` + `pr-review-toolkit` + `commit-commands` + `feature-dev` + 一個你語言的 `*-lsp`
@@ -342,13 +342,13 @@ Plugin
 | 機制 | 何時用 | 派遣方式 |
 |---|---|---|
 | **Subagent**<br>（穩定版） | delegate 大 context 任務（讀整個 codebase / 整理 logs）給 isolated context worker、結果回主 session | (1) 寫 `.claude/agents/<name>.md`（frontmatter `name` + `description` + `tools` + 可選 `model`）<br>(2) Claude 看 description **自動 delegate**；或 `/agents` 手動列表 |
-| **Agent team**<br>⚠️ experimental | 多 worker 之間要**互相溝通**、challenge 彼此（debate / peer review / 多角度探索） | (1) 啟用：`settings.json` 加 `"env": {"CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"}`（需 v2.1.32+）<br>(2) 自然語言派遣：`Create an agent team to explore X from different angles: one on UX, one on architecture, one playing devil's advocate`<br>(3) 跟 teammate 對話：`Shift+Down` 切換、直接輸入訊息<br>(4) 收尾：`Clean up the team` |
+| **Agent team**<br>（已有正式 docs、仍需 opt-in flag） | 多 worker 之間要**互相溝通**、challenge 彼此（debate / peer review / 多角度探索） | (1) **啟用**（仍需 opt-in）：`settings.json` 加 `"env": {"CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"}`、需 Claude Code v2.1.32+<br>(2) 自然語言派遣：`Create an agent team to explore X from different angles: one on UX, one on architecture, one playing devil's advocate`<br>(3) 跟 teammate 對話：`Shift+Down` 切換、直接輸入訊息<br>(4) 收尾：`Clean up the team` |
 | **Background agent**<br>（research preview） | 多個**獨立任務**各自背景跑、單一介面監控（同時 3 個 PR review） | (1) shell 派遣：`claude --bg "investigate the flaky test"`（需 v2.1.139+）<br>(2) 從現有 session 背景化：`/bg`<br>(3) 監控：`claude agents`（agent view 介面）<br>(4) 操作：`claude attach <id>` / `claude logs <id>` / `claude stop <id>` |
 
 **3 個機制怎麼選**：
 
 - 任務獨立、worker 不互動、結果回主 session 即可 → **Subagent**（最簡單、token 最省）
-- Worker 需要互相溝通 / debate / 共享 task list → **Agent team**（experimental、token 3-5x、適合 research / debug 競爭假設）
+- Worker 需要互相溝通 / debate / 共享 task list → **Agent team**（已正式有 docs、但仍需 opt-in env var；token 3-5x、適合 research / debug 競爭假設）
 - 多個獨立任務各自跑、想用 1 個介面監控全部 → **Background agent**（research preview、適合長時間任務並行）
 
 <details>
