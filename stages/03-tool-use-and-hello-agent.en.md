@@ -6,6 +6,7 @@
 ⏱ **Time estimate**: 2-3 weeks (~10-20 hours)
 
 > 💡 Term-dense stage (agent / tool use / function calling / ReAct / structured output / …) → see [`resources/glossary.en.md` §2](../resources/glossary.en.md#2-agents--tool-use).
+> 🗺️ **Before committing to Track A (CLI Power User) or Track B (Agent Builder)**, read [`resources/agent-paradigms.en.md`](../resources/agent-paradigms.en.md) — the 5-paradigm map of the agent landscape that helps you pick a track.
 
 This is the most important stage. **You don't understand agents until you've built one.** No skipping the hello-X demos.
 
