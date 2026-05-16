@@ -255,7 +255,13 @@ def main():
         # Group drift by file so we only do one read/write per file.
         by_file: dict[Path, list[tuple[int, str, str]]] = {}
         for repo, fp, line_no, declared, latest, pct, text in drift:
-            new_text = f"★ {fmt_stars(latest)}"
+            # STARS_RE's `\s*` after the digits consumes the trailing space
+            # for the bare-number case (no k/m suffix), e.g. it matches
+            # "★ 60 " in "★ 60 — desc". Re-emit that exact trailing
+            # whitespace so we don't glue the count to the next token
+            # ("★ 70—"). For "★ 12k+" the match has no trailing ws → no-op.
+            trail = text[len(text.rstrip()):]
+            new_text = f"★ {fmt_stars(latest)}" + trail
             by_file.setdefault(fp, []).append((line_no, text, new_text))
 
         files_changed = 0
