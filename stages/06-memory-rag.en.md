@@ -596,7 +596,7 @@ print(chunks[0])
 > 💡 **Delineation with Stage 3 Reflection**:
 > - To understand "how the reflection loop works and runs in a single turn" → Stage 3 Reflection.
 > - To understand "how reflections accumulate across sessions and agents learn from past lessons" → This section.
-> - To see how reflection is used in production agents (Cursor / Claude Code) → [Stage 5 5.6 Harness Internals](05-claude-code-ecosystem.md#56--claude-code-source-解剖reference-harness-implementation-track-b-必看).
+> - To see how reflection is used in production agents (Cursor / Claude Code) → [Stage 5 5.7 Harness Internals](05-claude-code-ecosystem.md#57--claude-code-source-解剖reference-harness-implementation-track-b-必看).
 
 ## 🤔 Advanced Reasoning / Reflection — 2024-2026 Trends ⭐ Covers Both Tracks
 

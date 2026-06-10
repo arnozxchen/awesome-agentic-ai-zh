@@ -56,7 +56,7 @@
 > 💡 **延伸組件**（agent 變強的 infrastructure、但**不是「是不是 agent」的判準**）：
 > - **記憶 / RAG**（agent 能跨對話記住東西）→ **Stage 6** 完整教
 > - **反思 / self-critique**（agent 看自己答案、發現問題、回頭改）→ 基本版見 **本 stage 反思**（concept + paper routing）；帶持久 memory 的進階版見 **Stage 6 Reflexion with Memory**
-> - **Production harness**（telemetry / safety / retry / orchestration）→ **Stage 5 5.6**
+> - **Production harness**（telemetry / safety / retry / orchestration）→ **Stage 5 5.7**
 >
 > 這些都是 advanced pattern——Stage 3 教最小可行 agent、後面 stage 教怎麼變強。
 
@@ -449,7 +449,7 @@ messages.append({"role": "tool", "tool_call_id": tc.id,
 - [**LangChain — Reflection Agents（blog）**](https://blog.langchain.dev/reflection-agents/) — framework 實作參考 + 完整 working notebook
 - [**datawhalechina/hello-agents**](https://github.com/datawhalechina/hello-agents) — 對應章節（自我反思 / Self-Refine 段落、中文完整教學）
 
-> 💡 **想看反思怎麼長進 production agent**：[Stage 5 5.6 Harness Internals](05-claude-code-ecosystem.md#56--claude-code-source-解剖reference-harness-implementation-track-b-必看) 解剖 Claude Code source 時可以看到——agent 跑完 tool call 後自我評估 patch、有問題回頭改、修正後再 commit。**這是現代 production agent 的核心 building block 之一**。
+> 💡 **想看反思怎麼長進 production agent**：[Stage 5 5.7 Harness Internals](05-claude-code-ecosystem.md#57--claude-code-source-解剖reference-harness-implementation-track-b-必看) 解剖 Claude Code source 時可以看到——agent 跑完 tool call 後自我評估 patch、有問題回頭改、修正後再 commit。**這是現代 production agent 的核心 building block 之一**。
 
 ## 🎯 精選 Projects
 

@@ -50,7 +50,7 @@
 | 跟誰比 | 那邊講什麼 | 本 stage 講什麼 |
 |---|---|---|
 | **Stage 5.5 Subagents** | Claude Code 原生 subagent 機制（markdown-based、不寫程式）| 通用 multi-agent framework（autogen / crewAI / langgraph、跨 vendor）|
-| **Stage 5.6 Claude Code source** | Claude Code source 解剖（參考實作 case study）| Harness engineering 通則（不綁特定 vendor）|
+| **Stage 5.7 Claude Code source** | Claude Code source 解剖（參考實作 case study）| Harness engineering 通則（不綁特定 vendor）|
 
 ### ⚠ 但你真的需要 multi-agent 嗎？
 
@@ -70,7 +70,7 @@
 
 你應該已經：
 - 完成 Stage 4（用過至少一個 agent framework 跑 multi-agent demo）
-- 完成 Stage 5（懂 MCP / Skills / Plugins / Subagents 各自角色，並用 5.6 解剖過 harness 內部）
+- 完成 Stage 5（懂 MCP / Skills / Plugins / Subagents 各自角色，並用 5.7 解剖過 harness 內部）
 - 完成 Stage 6（會基本 RAG，能講出 memory pattern 差異）
 - 對 Docker / git / CI 基礎熟悉（部署成可用服務會用到）
 
@@ -135,7 +135,7 @@
 
 想看實際在 production 跑的 harness 長什麼樣？兩個 reference：
 
-- **Claude Code 整個 runtime** — 是 reference harness 實作。**讀 source 練習見 [Stage 5.6](05-claude-code-ecosystem.md#56--claude-code-source-解剖reference-harness-implementation-track-b-必看)**（clone `claude-agent-sdk-python` 解剖 main loop + 上表前 6 個 runtime 元件位置；第 7 個 Eval harness 是外掛、第 8 個 Cost / Latency 是 cross-cutting、見下方深入段）
+- **Claude Code 整個 runtime** — 是 reference harness 實作。**讀 source 練習見 [Stage 5.7](05-claude-code-ecosystem.md#57--claude-code-source-解剖reference-harness-implementation-track-b-必看)**（clone `claude-agent-sdk-python` 解剖 main loop + 上表前 6 個 runtime 元件位置；第 7 個 Eval harness 是外掛、第 8 個 Cost / Latency 是 cross-cutting、見下方深入段）
 - **`anthropics/claude-agent-sdk-python`** source — 上面練習用的具體 repo
 
 → 本 stage 剩下的 6 個練習（multi-agent / eval / observability / SDK / deploy / cost）每個都是 harness 的一個面向。學完整 stage = 拼出完整的 harness engineering mental model。

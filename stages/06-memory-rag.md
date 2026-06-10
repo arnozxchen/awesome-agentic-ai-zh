@@ -600,7 +600,7 @@ print(chunks[0])
 > 💡 **跟 Stage 3 反思的分工**：
 > - 想理解「反思 loop 怎麼運作、單次怎麼跑」→ Stage 3 反思
 > - 想理解「反思怎麼跨 session 累積、agent 怎麼從過去學教訓」→ 本節
-> - 想看 production agent 內怎麼用反思（Cursor / Claude Code）→ [Stage 5 5.6 Harness Internals](05-claude-code-ecosystem.md#56--claude-code-source-解剖reference-harness-implementation-track-b-必看)
+> - 想看 production agent 內怎麼用反思（Cursor / Claude Code）→ [Stage 5 5.7 Harness Internals](05-claude-code-ecosystem.md#57--claude-code-source-解剖reference-harness-implementation-track-b-必看)
 
 ## 🤔 進階 Reasoning / Reflection — 2024-2026 思潮 ⭐ 兩個 track 都看
 

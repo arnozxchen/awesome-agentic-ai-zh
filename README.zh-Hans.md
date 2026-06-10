@@ -96,7 +96,7 @@ cd awesome-agentic-ai-zh
 | **A1** | [选一个 CLI Agent，开始用它做事（CLI Agent Intro & Selection）](tracks/cli/A1-cli-intro.zh-Hans.md) | 7 个主流 CLI 比较 · 安装 · 第一次跑 | 1 周 |
 | **A2** | [建立可重复使用的 CLI 工作流程（CLI Workflow Patterns）](tracks/cli/A2-cli-workflow.zh-Hans.md) | CLAUDE.md · slash command · 多步骤拆解 | 1-2 周 |
 | **A3** | [把 CLI Agent 接进真实工作流程（Integration & Production）](tracks/cli/A3-cli-production.zh-Hans.md) | MCP 接 CLI · CI 自动化 · cost / observability | 1-2 周 |
-| **+5** | [Stage 5 — Claude Code 生态系（Claude Code Ecosystem）](stages/05-claude-code-ecosystem.zh-Hans.md)（**共用 hub**）| MCP · Skills · Plugins · Subagents、Track A 必看 5.1-5.4 / 选读 5.5-5.6 | 1-2 周（Track A 视角）|
+| **+5** | [Stage 5 — Claude Code 生态系（Claude Code Ecosystem）](stages/05-claude-code-ecosystem.zh-Hans.md)（**共用 hub**）| MCP · Skills · Plugins · Subagents、Track A 必看 5.1-5.4 / 选读 5.5-5.7 | 1-2 周（Track A 视角）|
 | **+8** | [Stage 8 — Agent 操作介面（Agent Interfaces）](stages/08-agent-interfaces.zh-Hans.md)（**共用 hub**）| Computer Use · Browser Use · Code Sandbox、Track A 视角看 Track A 怎么用 | 1-2 周（Track A 视角）|
 
 > **Track A 预估总时程**：含 Stage 0-2（共用基础）+ A1-A3 + **Stage 5 + Stage 8（两个共用 hub）= 约 8-10 周**。核心参考：[`resources/cli-agents-guide.zh-Hans.md`](resources/cli-agents-guide.zh-Hans.md)。
