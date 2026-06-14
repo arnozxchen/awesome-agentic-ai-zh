@@ -19,6 +19,8 @@
 
 → These 3 terms run through every later stage. The goal of Stage 1 is to call the API yourself and feel firsthand how they shape the output.
 
+> 🧠 **Why you can tune temperature: first, next-token**: an LLM's core action is **predicting the next token**. It computes a probability distribution over the next token and **samples** one from it. `temperature` and `top_p` reshape that distribution: low temperature makes it sharper, almost always picking the most likely token (stable, reproducible); high temperature flattens it, so it more readily picks rare tokens (creative but prone to wandering). `max_tokens` just caps how many samples before stopping. So these are not magic knobs; they control *how the model picks tokens from a probability distribution*.
+
 ## 📌 Learning Goals
 
 After this stage you will be able to:
