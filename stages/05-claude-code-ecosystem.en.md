@@ -775,7 +775,7 @@ A single table to cover 4 projects. **Pick an entry point by looking at "Best fo
 
 ## 5.6 — Dynamic Workflows (when Claude writes its own workflow) ⭐ Opus 4.8+ feature
 
-> **What this section is**: 5.5 taught you to dispatch subagents **manually**; this is one level up — **Claude generates a workflow script and then runs it itself**. This is the Opus 4.8-era mechanism (started as a research preview, continued in the Fable 5 generation), built into recent Claude Code. This section only places it on the ecosystem map and clarifies how it divides labor with 5.5; the **mechanism / examples / quality patterns live in [Stage 7.5 — Dynamic Workflows deep-dive](07.5-advanced-agentic-concepts.en.md#-dynamic-workflows-opus-48--when-the-agent-writes-its-own-workflow)**.
+> **What this section is**: 5.5 taught you to dispatch subagents **manually**; this is one level up — **Claude generates a workflow script and then runs it itself**. This is the Opus 4.8-era mechanism (started as a research preview), built into recent Claude Code. This section only places it on the ecosystem map and clarifies how it divides labor with 5.5; the **mechanism / examples / quality patterns live in [Stage 7.5 — Dynamic Workflows deep-dive](07.5-advanced-agentic-concepts.en.md#-dynamic-workflows-opus-48--when-the-agent-writes-its-own-workflow)**.
 
 ### How it differs from 5.5 Subagents
 

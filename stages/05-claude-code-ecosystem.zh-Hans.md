@@ -775,7 +775,7 @@ You are a senior code reviewer. When invoked:
 
 ## 5.6 — Dynamic Workflows（让 Claude 自己写出 workflow）⭐ Opus 4.8+ 新机制
 
-> **本节定位**：5.5 教你**手动**派 subagent；本节更上一层——**让 Claude 自己生成一份 workflow 脚本、再自己执行**。这是 Opus 4.8 起的新机制（research preview 出身，Fable 5 世代延续），新版 Claude Code 内置。本节只把它放进生态地图、讲清楚跟 5.5 的分工；**机制 / 实例 / quality pattern 的完整版在 [Stage 7.5 — Dynamic Workflows 深入](07.5-advanced-agentic-concepts.zh-Hans.md#-dynamic-workflowsopus-48-当-agent-自己写出-workflow)**。
+> **本节定位**：5.5 教你**手动**派 subagent；本节更上一层——**让 Claude 自己生成一份 workflow 脚本、再自己执行**。这是 Opus 4.8 起的新机制（research preview 出身），新版 Claude Code 内置。本节只把它放进生态地图、讲清楚跟 5.5 的分工；**机制 / 实例 / quality pattern 的完整版在 [Stage 7.5 — Dynamic Workflows 深入](07.5-advanced-agentic-concepts.zh-Hans.md#-dynamic-workflowsopus-48-当-agent-自己写出-workflow)**。
 
 ### 跟 5.5 Subagents 的差别
 

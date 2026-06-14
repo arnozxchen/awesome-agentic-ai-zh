@@ -6,6 +6,11 @@ Format: `YYYY-MM-DD · category · 1-line summary (commit-sha)`.
 
 ---
 
+## 2026-06-13
+
+- **content** · Reframed Claude Fable 5 across the roadmap after Anthropic suspended all access to Fable 5 + Mythos 5 on 2026-06-12 (US government export-control directive; [status](https://status.claude.com/) · [statement](https://www.anthropic.com/news/fable-mythos-access); no restoration timeline). Documentation tables (`CLAUDE.md` / `examples/` / stages 01·06·07·07.5·08 / glossary) now mark Fable 5 as suspended and currently unavailable, with Opus 4.8 as the current top usable Claude tier; recommendation pick-lists (Path-2 reasoning chooser, Computer Use vendor table, OmniParser / browser-use swap-lists) drop Fable 5 so no reader is pointed at an inaccessible model. Tri-locale; anchor / zh-Hans-localize / language-switcher gates all pass. Suspension verified against two first-party sources, no fabricated facts.
+- **docs** · `CITATION.cff` version `2026.05.19` → `2026.06.13` (was stale vs the recent content batches).
+
 ## 2026-06-12
 
 - **content** · Claude Fable 5 (Mythos-class, `claude-fable-5`, GA 2026-06-09) added as the new top Claude tier across the trilingual roadmap — model tables in `CLAUDE.md` / `examples/` / stages 01·06·07·07.5·08 + glossary frontier entry; Opus 4.8 reframed as Opus-class flagship + Fable 5 safeguard-fallback. No fabricated context-window or benchmark numbers (Anthropic published none — marked "not yet published"). Also fixed a pre-existing `claude-opus-4-7` → `claude-opus-4-8` inconsistency (`12980b3`).
