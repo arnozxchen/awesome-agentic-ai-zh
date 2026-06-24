@@ -6,6 +6,10 @@ Format: `YYYY-MM-DD · category · 1-line summary (commit-sha)`.
 
 ---
 
+## 2026-06-24
+
+- **catalog** · Added DeusData/codebase-memory-mcp (★ 13.5k, MIT) to §5 Dev Collaboration — a code-intelligence MCP that indexes a codebase into a queryable knowledge graph (query structure / symbols / call paths instead of grep+read). Plain, non-marketing description (notes the re-index-after-edits + verify-load-bearing-claims caveats); tri-locale; §5 TOC count 7→9 (also corrects a pre-existing off-by-one); gates pass.
+
 ## 2026-06-13
 
 - **catalog** · Added 12 high-confidence repos (all gh-verified stars/license, none previously listed): microsoft/agent-framework (Stage 4); getzep/graphiti + lancedb/lancedb (Stage 6); comet-ml/opik, pydantic/logfire, NVIDIA-NeMo/Guardrails, BoundaryML/baml (Stage 7, incl. new Safety/Guardrails + Structured-Output rows); bytedance/UI-TARS-desktop + trycua/cua (Stage 8, new Computer Use Agent Stack); awslabs/mcp + ComposioHQ/composio (MCP/Skills catalog §6 / §12); microsoft/mcp-for-beginners (Stage 5.2 reading list). Tri-locale; per-section counts updated; anchor / zh-Hans / switcher gates pass.
